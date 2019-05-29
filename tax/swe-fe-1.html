@@ -1,0 +1,256 @@
+<html>
+
+<head>
+<TITLE>宜蘭土地 宜蘭房屋 宜蘭代書 宜蘭農舍 宜蘭法拍屋 法拍屋代標 代標 代墊 銀行貸款 實物抵繳 遺產稅 贈與稅 農地買賣 三星農地 員山農地 
+宜蘭農地</TITLE>
+		<META http-equiv="Content-Type" content="text/html; charset=x-x-big5">
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>李中瑜代書:土地增值稅計算</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('document').ready(function(){
+$(parent.document).find('frameSet').attr("cols","*,0")
+});
+</script>
+</head>
+
+<body bgcolor="#C0C0C0">
+
+<p> 
+
+		<TABLE height="346" width="653" align="center" border="0" ID="Table1">
+			<TR>
+				<TD width="647" height="342">
+					<p align="center"><font color="#FF0000"><b>宜蘭土地 宜蘭房屋 宜蘭代書 
+                    宜蘭法拍 宜蘭民宿</b></font></p>
+					<DIV align="center">
+						<P><FONT color="#0000ff" size="5"><STRONG>土地增值稅計算</STRONG></FONT></P>
+					</DIV>
+					<FORM name="landtax" ID="Form1">
+				      <table cellspacing="1" cellpadding="2" width="100%" border="1" id="Table2">
+                        <tr>
+                          <td width="30%" bgcolor="#f9fcd8">
+                            <div align="right">土地公告現值</div></td>
+                          <td valign="top" width="65%" bgcolor="#b9fbfb">
+                          <input name="T1" id="Text1" size="20">
+      元/每平方公尺 <font color="#0000ff"> (<a href="http://210.69.149.230/query/r48.jsp?menu=true">地政業務查詢</a>)</font></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#f9fcd8">
+                            <div align="right">原規定地價或前次移轉現值</div></td>
+                          <td bgcolor="#b9fbfb">
+                          <input name="T2" id="Text2" size="20">
+      元/每平方公尺</td>
+                        </tr>
+                        <tr>
+                          <td valign="top" width="30%" bgcolor="#f9fcd8">
+                            <div align="right">消費者物價總指數</div></td>
+                          <td valign="top" width="65%" bgcolor="#b9fbfb">
+                          <input name="T3" id="Text3" size="20">
+                          <a href="http://www.dgbas.gov.tw/public/data/dgbas03/bs3/inquire/cpispleym.xls">(物價指數查詢)
+							</a> </td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#f9fcd8">
+                            <div align="right">土地面積</div></td>
+                          <td bgcolor="#b9fbfb">
+                          <input name="T4" id="Text4" size="20">
+      平方公尺</td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#f9fcd8">
+                            <div align="right">持有年限</div></td>
+                          <td bgcolor="#b9fbfb"><select name="sel" id="Select1">
+                              <option selected value="0">20年以下</option>
+                              <option value="1">20年以上</option>
+                              <option value="2">30年以上</option>
+                              <option value="3">40年以上</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#f9fcd8" rowspan="2">
+                            <div align="right"><br>
+        移轉或設典範圍</div></td>
+                          <td valign="top" width="65%" bgcolor="#b9fbfb">分子：
+                              <input name="T6" id="Text5" size="20"></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#b9fbfb">/分母：
+                              <input name="T5" id="Text6" size="20"></td>
+                        </tr>
+                        <tr>
+                          <th bgcolor="#f9fcd8" colspan="2">
+                            <p align="center">
+                              <input onFocus="taxing()" type="button" value="增值稅估算" name="B1" id="Button1">
+                              <input onFocus="clearing()" type="button" value="清除資料" name="B2" id="Button2">
+                          </p></th>
+                        </tr>
+                        <tr>
+                          <td valign="top" bgcolor="#f9fcd8">
+                            <div align="right"><b>一般土地應納稅額：</b> </div></td>
+                          <td valign="top" bgcolor="#b9fbfb">
+                          <input name="T9" id="Text9" size="20">
+      元</td>
+                        </tr>
+                        <tr>
+                          <td valign="top" nowrap>
+                            <div align="right"><b>自用住宅土地應納稅額：</b></div></td>
+                          <td valign="top" bgcolor="#b9fbfb">
+                          <input name="T10" id="Text10" size="20">
+      元</td>
+                        </tr>
+                        </table>
+					</FORM>
+					<SCRIPT language="JavaScript">
+function taxing()
+{
+  var nowvalue,lastvalue,expvalue,area,bb15_2,bb15_3;
+  var nowtotal,oldtotal,addtotal,tax1,tax9,tax8,tax7,tax3;
+  tax3 = eval(document.landtax.sel.value);
+  //window.alert(tax3);
+  nowvalue=eval(document.landtax.T1.value);
+  lastvalue=eval(document.landtax.T2.value);
+  expvalue=eval(document.landtax.T3.value);
+  area=eval(document.landtax.T4.value);
+  bb15_2=eval(document.landtax.T5.value);
+  bb15_3=eval(document.landtax.T6.value);
+  oldtotal=lastvalue*area*(bb15_3/bb15_2)*(expvalue/100);
+  nowtotal=nowvalue*area*(bb15_3/bb15_2);
+  addtotal=nowtotal-oldtotal;
+  if (addtotal <= 0)  {  addtotal=0; oldtotal = 0  };
+  tax1=addtotal*0.1;
+  switch(tax3){
+  case 0 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.4-oldtotal*0.3  }
+           else
+           {
+            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.3-oldtotal*0.1  }
+           else  {  tax9=addtotal*0.2  }
+           }
+          
+           document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+  case 1 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.36-oldtotal*0.24  }
+           else
+           {
+           if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.28-oldtotal*0.08  }
+           else  {  tax9=addtotal*0.2  }
+           }
+             document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+  case 2 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.34-oldtotal*0.21  }
+           else
+           {
+            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.27-oldtotal*0.07  }
+           else  {  tax9=addtotal*0.2  }
+           }
+         document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+  case 3 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.32-oldtotal*0.18  }
+           else
+           {
+            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.26-oldtotal*0.06  }
+           else  {  tax9=addtotal*0.2  }
+           }
+           document.landtax.T9.value=Math.round(tax9);
+           
+           } break;
+           }
+     document.landtax.T10.value=Math.round(tax1);
+     }
+   
+function clearing()
+{
+  document.landtax.T1.value="";
+  document.landtax.T2.value="";
+  document.landtax.T3.value="";
+  document.landtax.T4.value="";
+  document.landtax.T5.value="";
+  document.landtax.T6.value="";
+  //document.landtax.T7.value="";
+  //document.landtax.T8.value="";
+  document.landtax.T9.value="";
+  document.landtax.T10.value="";
+
+}</SCRIPT>
+	</table>
+
+<center>
+<table BORDER=2 CELLSPACING=2 CELLPADDING=2 COLS=1 WIDTH="245" HEIGHT="35" BGCOLOR="#99FF99" >
+<tr>
+<td height="27" width="231">
+<p align="center"><b><font face="細明體" size="+1" color="#008000">
+<a href="http://www.landagent.com.tw/calculating/index.asp?page_name=calc">
+瀏覽器不支援時按此連結</a></font></b></td>
+</tr>
+<tr>
+<td height="27" width="231">
+<center>
+<p><b><font size=+1 face="細明體"><a href="swe-fe.html">▲上一頁</a>&nbsp; </font></b></p>
+</center>
+</td>
+</tr>
+</table></center>
+
+<center><table BORDER COLS=1 WIDTH="450" HEIGHT="12" BGCOLOR="#99FF99" >
+<tr>
+<td BGCOLOR="#FFCCFF">
+<center>
+<p><font size=+1><font color="#FF6600">&nbsp;</font><b><font color="#FF0000" face="細明體">歡迎來信</font></b></font></p>
+</center>
+</td>
+</tr>
+
+<tr>
+<td BGCOLOR="#99FF99">
+                                                                        
+                                                                        
+     
+      
+      
+      
+      
+      
+      
+      <p style="margin-top: 0pt; margin-bottom: 0pt;" align="center"><b>
+      <font color="#ffffff" face="細明體"><a href="mailto:abc0316@ms29.hinet.net"><font color="#ffffff">李中瑜代書: abc0316@ms29.hinet.net</font></a></font></b><br>
+
+
+
+
+
+
+                               <b><font color="#ffffff" face="細明體">
+		行動電話:0910-393760 或 TEL:(03)9611-836</font></b></p>
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      <p style="margin-top: 0pt; margin-bottom: 0pt;" align="center">
+                               <b><font color="#ffffff" face="細明體">
+                               事務所地址:宜蘭縣羅東鎮四育路105號</font></b></p>
+
+
+
+
+
+
+</td>
+</tr>
+</table></center>
+
+	</BODY>
+</HTML>

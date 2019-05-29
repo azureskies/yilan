@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/tax/swe-fe.html</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/index.html</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/tax/swe-fe-1.html</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/tax/swe-fe-2.html</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/tax/swe-fe-3.html</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/tax/swe-fe-4.html</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://lidayshu.myweb.hinet.net/index.html/tax/swe-fe-5.html</loc>
+  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+</urlset>
