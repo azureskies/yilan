@@ -1,11 +1,12 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<!DOCTYPE html>
 <html>
 <head>
+   <meta charset="utf-8">
    <meta http-equiv="Content-Type" content="text/html; charset=big5">
    <meta name="Author" content="COMNET INFORMATION CO., LTD. URL:'http://www.comnet.com.tw/' Email:'service@comnet.com.tw'">
    <meta name="GENERATOR" content="Microsoft FrontPage 12.0">
-   <title>©yÄõ¤g¦a ©yÄõ©Ð«Î ©yÄõ¥N®Ñ ©yÄõ¹AªÙ ©yÄõªk©ç«Î ªk©ç«Î¥N¼Ð ¥N¼Ð ¥N¹Ô »È¦æ¶U´Ú ¹êª«©èÃº ¿ò²£µ| ÃØ»Pµ| ¹A¦a¶R½æ ¤T¬P¹A¦a ­û¤s¹A¦a 
-   ©yÄõ¹A¦a</title>
+   <title>å®œè˜­åœŸåœ° å®œè˜­æˆ¿å±‹ å®œè˜­ä»£æ›¸ å®œè˜­è¾²èˆ å®œè˜­æ³•æ‹å±‹ æ³•æ‹å±‹ä»£æ¨™ ä»£æ¨™ ä»£å¢Š éŠ€è¡Œè²¸æ¬¾ å¯¦ç‰©æŠµç¹³ éºç”¢ç¨… è´ˆèˆ‡ç¨… è¾²åœ°è²·è³£ ä¸‰æ˜Ÿè¾²åœ° å“¡å±±è¾²åœ° 
+   å®œè˜­è¾²åœ°</title>
 <!-- saved from url=(0033)http://house.xo.com.tw/mogaze.htm -->
 </head>
 <body text="#000000" bgcolor="#DEE4FE" link="#FFFFFF" vlink="#33CCFF" alink="#FFFF00">
@@ -32,7 +33,7 @@
 			ynper = i2.value - 0;
 			eynper = i3.value - 0;
 			yrate = (i4.value - 0) / 100;
-			r1.value = ((eynper == 0)?"µL¼e­­´Á":Math.round(cap * (yrate / 12)));
+			r1.value = ((eynper == 0)?"ç„¡å¯¬é™æœŸ":Math.round(cap * (yrate / 12)));
 			r2.value = Math.round(cap / pv(yrate/12, (ynper-eynper)*12, -1));
 
 			r3.value = r1.value;
@@ -43,10 +44,10 @@
 			for (i = 1; i<(ynper - eynper)*12; i++)
 			{
 				if ((i-1)%12 == 0)
-					r4.value += "²Ä" + i + "­Ó¤ë(²Ä" + ((i-1)/12+1) + "¦~)¥I: " + Math.round(cap/((ynper-eynper)*12) + (ncap*yrate/12)) + "¤¸.\n";
+					r4.value += "ç¬¬" + i + "å€‹æœˆ(ç¬¬" + ((i-1)/12+1) + "å¹´)ä»˜: " + Math.round(cap/((ynper-eynper)*12) + (ncap*yrate/12)) + "å…ƒ.\n";
 				ncap -= cap/((ynper-eynper)*12);
 			}
-			r4.value += "³Ì«á¤@­Ó¤ë¥I: " + Math.round(cap/((ynper-eynper)*12) + (ncap*yrate/12)) + "¤¸.\n";
+			r4.value += "æœ€å¾Œä¸€å€‹æœˆä»˜: " + Math.round(cap/((ynper-eynper)*12) + (ncap*yrate/12)) + "å…ƒ.\n";
 		}
 	}
 // Script End -->
@@ -56,9 +57,9 @@
 <table BORDER=0 CELLSPACING=2 CELLPADDING=2 COLS=1 HEIGHT="10" style="width: 490px" >
 <tr>
 <td width="393">
-<p align="center" style="width: 480px"><font color="#000080"><b>©yÄõ¤g¦a ©yÄõ©Ð«Î ©yÄõ¥N®Ñ 
-©yÄõªk©ç ©yÄõ¥Á±J</b></font></p>
-<center style="width: 481px"><b><font face="²Ó©úÅé"><font color="#FF0000"><font size=+3>©Ð«Î¶U´ÚÃº®§¸Õºâªí</font></font></font></b></center>
+<p align="center" style="width: 480px"><font color="#000080"><b>å®œè˜­åœŸåœ° å®œè˜­æˆ¿å±‹ å®œè˜­ä»£æ›¸ 
+å®œè˜­æ³•æ‹ å®œè˜­æ°‘å®¿</b></font></p>
+<center style="width: 481px"><b><font face="ç´°æ˜Žé«”"><font color="#FF0000"><font size=+3>æˆ¿å±‹è²¸æ¬¾ç¹³æ¯è©¦ç®—è¡¨</font></font></font></b></center>
 </td>
 </tr>
 </table></center>
@@ -74,31 +75,31 @@
 </caption>
 
 <tr>
-<td><b><font face="²Ó©úÅé">¶U´Úª÷ÃB:</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">è²¸æ¬¾é‡‘é¡:</font></b></td>
 
-<td><input maxLength=8 name=i1 size=8><b><font face="²Ó©úÅé">¸U¤¸</font></b></td>
+<td><input maxLength=8 name=i1 size=8><b><font face="ç´°æ˜Žé«”">è¬å…ƒ</font></b></td>
 </tr>
 
 <tr>
-<td><b><font face="²Ó©úÅé">¶U´Ú¦~­­:</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">è²¸æ¬¾å¹´é™:</font></b></td>
 
-<td><input maxLength=8 name=i2 size=8><b><font face="²Ó©úÅé">¦~</font></b></td>
+<td><input maxLength=8 name=i2 size=8><b><font face="ç´°æ˜Žé«”">å¹´</font></b></td>
 </tr>
 
 <tr>
-<td><b><font face="²Ó©úÅé">¼e ­­ ´Á:</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">å¯¬ é™ æœŸ:</font></b></td>
 
-<td><input maxLength=8 name=i3 size=8><b><font face="²Ó©úÅé">¦~</font></b></td>
+<td><input maxLength=8 name=i3 size=8><b><font face="ç´°æ˜Žé«”">å¹´</font></b></td>
 </tr>
 
 <tr>
-<td><b><font face="²Ó©úÅé">¶U´Ú§Q²v:</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">è²¸æ¬¾åˆ©çŽ‡:</font></b></td>
 
-<td><input maxLength=8 name=i4 size=8><b><font face="²Ó©úÅé">%</font></b></td>
+<td><input maxLength=8 name=i4 size=8><b><font face="ç´°æ˜Žé«”">%</font></b></td>
 </tr>
 </table></center>
 
-<center><input onclick=GetLoan() type=button value="[ ¶}©l­pºâ ]"></center>
+<center><input onclick=GetLoan() type=button value="[ é–‹å§‹è¨ˆç®— ]"></center>
 
 <center><table BORDER=0 CELLPADDING=2 >
 <caption>
@@ -109,53 +110,53 @@
 </caption>
 
 <tr>
-<td VALIGN=TOP><b><font face="²Ó©úÅé"><font color="#FF0000">¤@¡B¥»®§¥­§¡ÅuÁÙªk</font></font></b></td>
+<td VALIGN=TOP><b><font face="ç´°æ˜Žé«”"><font color="#FF0000">ä¸€ã€æœ¬æ¯å¹³å‡æ”¤é‚„æ³•</font></font></b></td>
 
-<td VALIGN=TOP><b><font face="²Ó©úÅé"><font color="#000000">1.¼e­­´Á¤º¤ë¥I:</font></font></b></td>
+<td VALIGN=TOP><b><font face="ç´°æ˜Žé«”"><font color="#000000">1.å¯¬é™æœŸå…§æœˆä»˜:</font></font></b></td>
 
-<td VALIGN=TOP><input maxLength=8 name=r1 size=8><b><font face="²Ó©úÅé"><font color="#000000">¤¸</font><i><font color="#3333FF">(<u>¥u¥I§Q®§¤£¥I¥»ª÷</u>)</font></i></font></b></td>
+<td VALIGN=TOP><input maxLength=8 name=r1 size=8><b><font face="ç´°æ˜Žé«”"><font color="#000000">å…ƒ</font><i><font color="#3333FF">(<u>åªä»˜åˆ©æ¯ä¸ä»˜æœ¬é‡‘</u>)</font></i></font></b></td>
 </tr>
 
 <tr>
-<td><b><font face="²Ó©úÅé">¡@</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">ã€€</font></b></td>
 
-<td><b><font face="²Ó©úÅé">2.¼e­­´Á«á¤ë¥I:</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">2.å¯¬é™æœŸå¾Œæœˆä»˜:</font></b></td>
 
-<td><input maxLength=8 name=r2 size=8><b><font face="²Ó©úÅé">¤¸</font></b></td>
+<td><input maxLength=8 name=r2 size=8><b><font face="ç´°æ˜Žé«”">å…ƒ</font></b></td>
 </tr>
 
 <tr>
-<td NOWRAP><b><font face="²Ó©úÅé">¡@</font></b></td>
+<td NOWRAP><b><font face="ç´°æ˜Žé«”">ã€€</font></b></td>
 
-<td><b><font face="²Ó©úÅé">¡@</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">ã€€</font></b></td>
 
-<td><b><font face="²Ó©úÅé">¡@</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">ã€€</font></b></td>
 </tr>
 
 <tr>
-<td VALIGN=TOP><b><font face="²Ó©úÅé"><font color="#FF0000">¤G¡B¥»ª÷¥­§¡ÅuÁÙªk</font></font></b></td>
+<td VALIGN=TOP><b><font face="ç´°æ˜Žé«”"><font color="#FF0000">äºŒã€æœ¬é‡‘å¹³å‡æ”¤é‚„æ³•</font></font></b></td>
 
-<td VALIGN=TOP NOWRAP><b><font face="²Ó©úÅé">1.¼e­­´Á¤º¤ë¥I:</font></b></td>
+<td VALIGN=TOP NOWRAP><b><font face="ç´°æ˜Žé«”">1.å¯¬é™æœŸå…§æœˆä»˜:</font></b></td>
 
-<td VALIGN=TOP><input maxLength=8 name=r3 size=8><b><font face="²Ó©úÅé">¤¸<font color="#3333FF">(<i><u>¥u¥I§Q®§¤£¥I¥»ª÷</u></i>)</font></font></b></td>
+<td VALIGN=TOP><input maxLength=8 name=r3 size=8><b><font face="ç´°æ˜Žé«”">å…ƒ<font color="#3333FF">(<i><u>åªä»˜åˆ©æ¯ä¸ä»˜æœ¬é‡‘</u></i>)</font></font></b></td>
 </tr>
 
 <tr>
-<td><b><font face="²Ó©úÅé">¡@</font></b></td>
+<td><b><font face="ç´°æ˜Žé«”">ã€€</font></b></td>
 
-<td COLSPAN="2" NOWRAP><b><font face="²Ó©úÅé">2.¼e­­´Á«á:&nbsp;</font></b>
+<td COLSPAN="2" NOWRAP><b><font face="ç´°æ˜Žé«”">2.å¯¬é™æœŸå¾Œ:&nbsp;</font></b>
 <br><textarea cols=30 name=r4 rows=10></textarea></td>
 </tr>
 </table></center>
 
-<center><b><font face="²Ó©úÅé">¡@</font></b></form></center>
+<center><b><font face="ç´°æ˜Žé«”">ã€€</font></b></form></center>
 
 <hr>
 <center>
 <table BORDER=2 CELLSPACING=2 CELLPADDING=2 COLS=1 WIDTH="28%" HEIGHT="42" BGCOLOR="#000000" >
 <tr>
 <td height="34">
-<center><b><font face="²Ó©úÅé"><font size=+1><a href="swe-fe.html">¡¶ ¤W¤@­¶</a></font></font></b></center>
+<center><b><font face="ç´°æ˜Žé«”"><font size=+1><a href="swe-fe.html">â–² ä¸Šä¸€é </a></font></font></b></center>
 </td>
 </tr>
 </table></center>
@@ -163,7 +164,7 @@
 <center><table BORDER COLS=1 WIDTH="450" HEIGHT="12" BGCOLOR="#000000" >
 <tr>
 <td BGCOLOR="#FFFFFF">
-<center><font size=+1><font color="#FF6600">&nbsp;</font><b><font face="²Ó©úÅé"><font color="#FF0000">Åwªï¨Ó«H</font></font></b></font></center>
+<center><font size=+1><font color="#FF6600">&nbsp;</font><b><font face="ç´°æ˜Žé«”"><font color="#FF0000">æ­¡è¿Žä¾†ä¿¡</font></font></b></font></center>
 </td>
 </tr>
 
@@ -179,15 +180,15 @@
       
       
       <p style="margin-top: 0pt; margin-bottom: 0pt;" align="center"><b>
-      <font color="#ffffff" face="²Ó©úÅé"><a href="mailto:abc0316@ms29.hinet.net"><font color="#ffffff">§õ¤¤·ì¥N®Ñ: abc0316@ms29.hinet.net</font></a></font></b><br>
+      <font color="#ffffff" face="ç´°æ˜Žé«”"><a href="mailto:abc0316@ms29.hinet.net"><font color="#ffffff">æŽä¸­ç‘œä»£æ›¸: abc0316@ms29.hinet.net</font></a></font></b><br>
 
 
 
 
 
 
-                               <b><font color="#ffffff" face="²Ó©úÅé">
-		¦æ°Ê¹q¸Ü:0910-393760 ©Î TEL:(03)9611-836</font></b></p>
+                               <b><font color="#ffffff" face="ç´°æ˜Žé«”">
+		è¡Œå‹•é›»è©±:0910-393760 æˆ– TEL:(03)9611-836</font></b></p>
 
 
 
@@ -201,8 +202,8 @@
       
       
       <p style="margin-top: 0pt; margin-bottom: 0pt;" align="center">
-                               <b><font color="#ffffff" face="²Ó©úÅé">
-                               ¨Æ°È©Ò¦a§}:©yÄõ¿¤Ã¹ªFÂí¥|¨|¸ô105¸¹</font></b></p>
+                               <b><font color="#ffffff" face="ç´°æ˜Žé«”">
+                               äº‹å‹™æ‰€åœ°å€:å®œè˜­ç¸£ç¾…æ±éŽ®å››è‚²è·¯105è™Ÿ</font></b></p>
 
 
 
