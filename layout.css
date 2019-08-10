@@ -1,4 +1,4 @@
-@charset "UTF8";
+﻿@charset "UTF8";
 /* CSS Document */
 *{	font-family:"標楷體";
 	padding:0;
@@ -48,7 +48,7 @@ h4{
 .border{
 	clear:both;	
 	border-bottom:#666 2px solid;
-	height:80px;
+	height:100px;
 }
 .service{
 	padding:0px 100px;
