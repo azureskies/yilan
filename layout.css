@@ -225,5 +225,9 @@ height:80px;
 	display:inline-table;
 }
 #footer p{
-	padding:5px 20px;
+	font-family:"標楷體";
+	padding:0;
+	margin:0;
+	font-size:24px;
+	background-color:#FFF;
 }
