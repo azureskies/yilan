@@ -224,3 +224,6 @@ height:80px;
 #footer a{
 	display:inline-table;
 }
+#footer p{
+	padding:5px 20px;
+}
