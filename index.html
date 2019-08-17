@@ -1,688 +1,786 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name=viewport content="width=device-width, initial-scale=0.35">
-<meta http-equiv="Content-Type" content="text/html" />
-<meta name="google-site-verification" content="3bVyGr99IYsb3OWGTGqSCW1SxLXJWAHa7DEqwePvcyU" />
-<meta name="msvalidate.01" content="4D3F6AEBC8A074C7B3ADDA2C92B6FD92" />
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=0.35">
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <meta name="google-site-verification" content="3bVyGr99IYsb3OWGTGqSCW1SxLXJWAHa7DEqwePvcyU"/>
+    <meta name="msvalidate.01" content="4D3F6AEBC8A074C7B3ADDA2C92B6FD92"/>
 
-<title>李中瑜代書事務所(地政士事務所)-宜蘭、羅東</title>
-<meta name="description" content="宜蘭縣羅東鎮的土地、房屋代書(地政士)，專業又富有經驗，解決過不少困難案件，希望能為您服務。">
-<meta name="keywords" content="代書,土地代書,地政士,房屋代書,代書事務所,地政士事務所,貸款,羅東代書,宜蘭代書,節稅">
-<meta http-equiv="Content-Language" content="zh-tw" />
-<script src="jquery-1.11.1.min.js" language="javascript"></script>
-<script language="javascript">
-$(function(){
-	$('#about').click(function(){
-		$('html,body').animate({scrollTop:$('#aboutme').offset().top}, 800);
-	}); 
-	
-	$('#service').click(function(){
-				$('html,body').animate({scrollTop:$('#aboutservice').offset().top}, 800);
-	});
-	
-	$('#cost').click(function(){
-		$('html,body').animate({scrollTop:$('#aboutcost').offset().top}, 800);
-	});
-	$('#tax').click(function(){
-		$('html,body').animate({scrollTop:$('#abouttax').offset().top}, 800);
-	});
-		$('#web').click(function(){
-		$('html,body').animate({scrollTop:$('#aboutweb').offset().top}, 800);
-	});
-		$('#us').click(function(){
-		$('html,body').animate({scrollTop:$('#aboutus').offset().top}, 800);
-	});
-		$('#land').click(function(){
-		$('html,body').animate({scrollTop:$('#land').offset().top-250}, 800);
-	});
-		$('#house1').click(function(){
-		$('html,body').animate({scrollTop:$('#house1').offset().top-250}, 800);
-	});
-		$('#house2').click(function(){
-		$('html,body').animate({scrollTop:$('#house2').offset().top-110}, 800);
-	});
-		$('#service01').click(function(){
-		$('html,body').animate({scrollTop:$('#service01').offset().top-220}, 800);
-	});
-		$('#service02').click(function(){
-		$('html,body').animate({scrollTop:$('#service02').offset().top-300}, 800);
-	});	
-		$('#service03').click(function(){
-		$('html,body').animate({scrollTop:$('#service03').offset().top-300}, 800);
-	});
-		$('#service04').click(function(){
-		$('html,body').animate({scrollTop:$('#service04').offset().top-300}, 800);
-	});
-		$('#service05').click(function(){
-		$('html,body').animate({scrollTop:$('#service05').offset().top-300}, 800);
-	});
-		$('#service06').click(function(){
-		$('html,body').animate({scrollTop:$('#service06').offset().top-300}, 800);
-	});
-		$('#service07').click(function(){
-		$('html,body').animate({scrollTop:$('#service07').offset().top-300}, 800);
-	});
-		$('#service08').click(function(){
-		$('html,body').animate({scrollTop:$('#service08').offset().top-300}, 800);
-	});
-		$('#service09').click(function(){
-		$('html,body').animate({scrollTop:$('#service09').offset().top-300}, 800);
-	});
-		$('#service010').click(function(){
-		$('html,body').animate({scrollTop:$('#service010').offset().top-300}, 800);
-	});
-});
-</script>
+    <title>李中瑜代書事務所(地政士事務所)-宜蘭、羅東</title>
+    <meta name="description" content="宜蘭縣羅東鎮的土地、房屋代書(地政士)，專業又富有經驗，解決過不少困難案件，希望能為您服務。">
+    <meta name="keywords" content="代書,土地代書,地政士,房屋代書,代書事務所,地政士事務所,貸款,羅東代書,宜蘭代書,節稅">
+    <meta http-equiv="Content-Language" content="zh-tw"/>
+    <script src="jquery-1.11.1.min.js" language="javascript"></script>
+    <script language="javascript">
+        $(function () {
+            $('#about').click(function () {
+                $('html,body').animate({scrollTop: $('#aboutme').offset().top}, 800);
+            });
 
-<SCRIPT language="JavaScript">
-function taxing()
-{
-  var nowvalue,lastvalue,expvalue,area,bb15_2,bb15_3;
-  var nowtotal,oldtotal,addtotal,tax1,tax9,tax8,tax7,tax3;
-  tax3 = eval(document.landtax.sel.value);
-  //window.alert(tax3);
-  nowvalue=eval(document.landtax.T1.value);
-  lastvalue=eval(document.landtax.T2.value);
-  expvalue=eval(document.landtax.T3.value);
-  area=eval(document.landtax.T4.value);
-  bb15_2=eval(document.landtax.T5.value);
-  bb15_3=eval(document.landtax.T6.value);
-  oldtotal=lastvalue*area*(bb15_3/bb15_2)*(expvalue/100);
-  nowtotal=nowvalue*area*(bb15_3/bb15_2);
-  addtotal=nowtotal-oldtotal;
-  if (addtotal <= 0)  {  addtotal=0; oldtotal = 0  };
-  tax1=addtotal*0.1;
-  switch(tax3){
-  case 0 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.4-oldtotal*0.3  }
-           else
-           {
-            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.3-oldtotal*0.1  }
-           else  {  tax9=addtotal*0.2  }
-           }
-          
-           document.landtax.T9.value=Math.round(tax9);
-           
-           } break;
-  case 1 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.36-oldtotal*0.24  }
-           else
-           {
-           if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.28-oldtotal*0.08  }
-           else  {  tax9=addtotal*0.2  }
-           }
-             document.landtax.T9.value=Math.round(tax9);
-           
-           } break;
-  case 2 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.34-oldtotal*0.21  }
-           else
-           {
-            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.27-oldtotal*0.07  }
-           else  {  tax9=addtotal*0.2  }
-           }
-         document.landtax.T9.value=Math.round(tax9);
-           
-           } break;
-  case 3 : {if (addtotal > 2*oldtotal )  {  tax9=addtotal*0.32-oldtotal*0.18  }
-           else
-           {
-            if((oldtotal <= addtotal) && (addtotal <= 2*oldtotal))  {  tax9=addtotal*0.26-oldtotal*0.06  }
-           else  {  tax9=addtotal*0.2  }
-           }
-           document.landtax.T9.value=Math.round(tax9);
-           
-           } break;
-           }
-     document.landtax.T10.value=Math.round(tax1);
-     }
-   
-function clearing()
-{
-  document.landtax.T1.value="";
-  document.landtax.T2.value="";
-  document.landtax.T3.value="";
-  document.landtax.T4.value="";
-  document.landtax.T5.value="";
-  document.landtax.T6.value="";
-  //document.landtax.T7.value="";
-  //document.landtax.T8.value="";
-  document.landtax.T9.value="";
-  document.landtax.T10.value="";
+            $('#service').click(function () {
+                $('html,body').animate({scrollTop: $('#aboutservice').offset().top}, 800);
+            });
 
-}</SCRIPT>
-<script language=JavaScript>
-{
-var a1,a2,a3
+            $('#cost').click(function () {
+                $('html,body').animate({scrollTop: $('#aboutcost').offset().top}, 800);
+            });
+            $('#tax').click(function () {
+                $('html,body').animate({scrollTop: $('#abouttax').offset().top}, 800);
+            });
+            $('#web').click(function () {
+                $('html,body').animate({scrollTop: $('#aboutweb').offset().top}, 800);
+            });
+            $('#us').click(function () {
+                $('html,body').animate({scrollTop: $('#aboutus').offset().top}, 800);
+            });
+            $('#land').click(function () {
+                $('html,body').animate({scrollTop: $('#land').offset().top - 250}, 800);
+            });
+            $('#house1').click(function () {
+                $('html,body').animate({scrollTop: $('#house1').offset().top - 250}, 800);
+            });
+            $('#house2').click(function () {
+                $('html,body').animate({scrollTop: $('#house2').offset().top - 110}, 800);
+            });
+            $('#service01').click(function () {
+                $('html,body').animate({scrollTop: $('#service01').offset().top - 220}, 800);
+            });
+            $('#service02').click(function () {
+                $('html,body').animate({scrollTop: $('#service02').offset().top - 300}, 800);
+            });
+            $('#service03').click(function () {
+                $('html,body').animate({scrollTop: $('#service03').offset().top - 300}, 800);
+            });
+            $('#service04').click(function () {
+                $('html,body').animate({scrollTop: $('#service04').offset().top - 300}, 800);
+            });
+            $('#service05').click(function () {
+                $('html,body').animate({scrollTop: $('#service05').offset().top - 300}, 800);
+            });
+            $('#service06').click(function () {
+                $('html,body').animate({scrollTop: $('#service06').offset().top - 300}, 800);
+            });
+            $('#service07').click(function () {
+                $('html,body').animate({scrollTop: $('#service07').offset().top - 300}, 800);
+            });
+            $('#service08').click(function () {
+                $('html,body').animate({scrollTop: $('#service08').offset().top - 300}, 800);
+            });
+            $('#service09').click(function () {
+                $('html,body').animate({scrollTop: $('#service09').offset().top - 300}, 800);
+            });
+            $('#service010').click(function () {
+                $('html,body').animate({scrollTop: $('#service010').offset().top - 300}, 800);
+            });
+        });
+    </script>
 
-a1 = ("0");
-a2 = ("0");
-a3 = ("0");
+    <SCRIPT language="JavaScript">
+        function taxing() {
+            var nowvalue, lastvalue, expvalue, area, bb15_2, bb15_3;
+            var nowtotal, oldtotal, addtotal, tax1, tax9, tax8, tax7, tax3;
+            tax3 = eval(document.landtax.sel.value);
+            //window.alert(tax3);
+            nowvalue = eval(document.landtax.T1.value);
+            lastvalue = eval(document.landtax.T2.value);
+            expvalue = eval(document.landtax.T3.value);
+            area = eval(document.landtax.T4.value);
+            bb15_2 = eval(document.landtax.T5.value);
+            bb15_3 = eval(document.landtax.T6.value);
+            oldtotal = lastvalue * area * (bb15_3 / bb15_2) * (expvalue / 100);
+            nowtotal = nowvalue * area * (bb15_3 / bb15_2);
+            addtotal = nowtotal - oldtotal;
+            if (addtotal <= 0) {
+                addtotal = 0;
+                oldtotal = 0
+            }
+            ;
+            tax1 = addtotal * 0.1;
+            switch (tax3) {
+                case 0 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.4 - oldtotal * 0.3
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.3 - oldtotal * 0.1
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
 
-function seta1(t1) {a1 = t1.value;}
-function seta2(t2) {a2 = t2.value;}
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+                case 1 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.36 - oldtotal * 0.24
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.28 - oldtotal * 0.08
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+                case 2 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.34 - oldtotal * 0.21
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.27 - oldtotal * 0.07
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+                case 3 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.32 - oldtotal * 0.18
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.26 - oldtotal * 0.06
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+            }
+            document.landtax.T10.value = Math.round(tax1);
+        }
+
+        function clearing() {
+            document.landtax.T1.value = "";
+            document.landtax.T2.value = "";
+            document.landtax.T3.value = "";
+            document.landtax.T4.value = "";
+            document.landtax.T5.value = "";
+            document.landtax.T6.value = "";
+            //document.landtax.T7.value="";
+            //document.landtax.T8.value="";
+            document.landtax.T9.value = "";
+            document.landtax.T10.value = "";
+
+        }</SCRIPT>
+    <script language=JavaScript>
+        {
+            var a1, a2, a3
+
+            a1 = ("0");
+            a2 = ("0");
+            a3 = ("0");
+
+            function seta1(t1) {
+                a1 = t1.value;
+            }
+
+            function seta2(t2) {
+                a2 = t2.value;
+            }
 
 
-function taxing2(form)
-	{
-	var xa1
-	xa1 = (a1*(a2/100));
-	form.fxa1.value = xa1;
-	}
- }
-</script>
-<script language=JavaScript>
-<!-- Script Begin //	
+            function taxing2(form) {
+                var xa1
+                xa1 = (a1 * (a2 / 100));
+                form.fxa1.value = xa1;
+            }
+        }
+    </script>
+    <script language=JavaScript>
+        <!--
+        Script
+        Begin //
 
-	function pv(rate, nper, pmt)
-	{
-		return -(pmt*(Math.pow(1+rate, nper)-1)/rate) / Math.pow(1+rate, nper);
-	}
+        function pv(rate, nper, pmt) {
+            return -(pmt * (Math.pow(1 + rate, nper) - 1) / rate) / Math.pow(1 + rate, nper);
+        }
 
-	function GetECI(cap, yrate, eynper)
-	{
-		return (cap - pv(yrate/12, eynper*12, -(cap * (yrate / 12)))) * Math.pow(1 + yrate/12, eynper*12);
-	}
+        function GetECI(cap, yrate, eynper) {
+            return (cap - pv(yrate / 12, eynper * 12, -(cap * (yrate / 12)))) * Math.pow(1 + yrate / 12, eynper * 12);
+        }
 
-	function GetLoan()
-	{
-		var i, j, k;
-		var cap, ynper, eynper, yrate, ncap;
-		with (document.loan)
-		{
-			cap = (i1.value - 0) * 10000;
-			ynper = i2.value - 0;
-			eynper = i3.value - 0;
-			yrate = (i4.value - 0) / 100;
-			r1.value = ((eynper == 0)?"無寬限期":Math.round(cap * (yrate / 12)));
-			r2.value = Math.round(cap / pv(yrate/12, (ynper-eynper)*12, -1));
+        function GetLoan() {
+            var i, j, k;
+            var cap, ynper, eynper, yrate, ncap;
+            with (document.loan) {
+                cap = (i1.value - 0) * 10000;
+                ynper = i2.value - 0;
+                eynper = i3.value - 0;
+                yrate = (i4.value - 0) / 100;
+                r1.value = ((eynper == 0) ? "無寬限期" : Math.round(cap * (yrate / 12)));
+                r2.value = Math.round(cap / pv(yrate / 12, (ynper - eynper) * 12, -1));
 
-			r3.value = r1.value;
+                r3.value = r1.value;
 
-			r4.value = "";
-			ncap = GetECI(cap, yrate, eynper);
-			j = 0;
-			for (i = 1; i<(ynper - eynper)*12; i++)
-			{
-				if ((i-1)%12 == 0)
-					r4.value += "第" + i + "個月(第" + ((i-1)/12+1) + "年)付: " + Math.round(cap/((ynper-eynper)*12) + (ncap*yrate/12)) + "元.\n";
-				ncap -= cap/((ynper-eynper)*12);
-			}
-			r4.value += "最後一個月付: " + Math.round(cap/((ynper-eynper)*12) + (ncap*yrate/12)) + "元.\n";
-		}
-	}
-// Script End -->
-</script>
+                r4.value = "";
+                ncap = GetECI(cap, yrate, eynper);
+                j = 0;
+                for (i = 1; i < (ynper - eynper) * 12; i++) {
+                    if ((i - 1) % 12 == 0)
+                        r4.value += "第" + i + "個月(第" + ((i - 1) / 12 + 1) + "年)付: " + Math.round(cap / ((ynper - eynper) * 12) + (ncap * yrate / 12)) + "元.\n";
+                    ncap -= cap / ((ynper - eynper) * 12);
+                }
+                r4.value += "最後一個月付: " + Math.round(cap / ((ynper - eynper) * 12) + (ncap * yrate / 12)) + "元.\n";
+            }
+        }
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        // Script End -->
+    </script>
 
-<script type="text/javascript">
-$('document').ready(function(){
-$(parent.document).find('frameSet').attr("cols","*,0")
-});
-</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
-<link href="layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $('document').ready(function () {
+            $(parent.document).find('frameSet').attr("cols", "*,0")
+        });
+    </script>
 
-<meta property="fb:app_id" content="355040711326416">
-<meta property="fb:admins" content="100000356677334"/>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <link href="layout.css" rel="stylesheet" type="text/css"/>
 
-  ga('create', 'UA-53308592-1', 'auto');
-  ga('send', 'pageview');
+    <meta property="fb:app_id" content="355040711326416">
+    <meta property="fb:admins" content="100000356677334"/>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-</script>
+        ga('create', 'UA-53308592-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 
 
 </head>
 
 <body>
-<Div id ="wrapper">	
+<Div id="wrapper">
 
-<!--頭開始-->
+    <!--頭開始-->
 
-<DIV id ="header">
-<img src="img/lidayshu.PNG" width="265" height="52" title="宜蘭地政士事務所" alt="宜蘭地政士事務所" align=left/><img style="display:none" src="img/zhongchuan.PNG" alt="中川不動產" name="zhongchuan" width="198" height="50"  align=right />
+    <DIV id="header">
+        <a href="index.html"><img src="img/lidayshu.PNG" width="265" height="52" title="宜蘭地政士事務所" alt="宜蘭地政士事務所" align=left/></a>
+    </DIV>
 
-</DIV>
-
-<!--頭結束-->
-
+    <!--頭結束-->
 
 
-<!--選單開始-->
+    <!--選單開始-->
 
-<DIV id ="mainNav">
-  <ul>
-    <li><a id=about href="javascript:void(0)">關於我</a></li>
-    <li><a id=service href="javascript:void(0)">服務項目</a></li>
-    <li><a id=tax href="javascript:void(0)">稅費計算</a></li>
-    <li><a id=web href="javascript:void(0)">相關連結</a></li>
-	<li><a id=us href="javascript:void(0)">線上諮詢</a></li>
-  </ul>
-  </DIV>
-  
-<!--選單結束-->
+    <DIV id="mainNav">
+        <ul>
+            <li><a id=about href="javascript:void(0)">關於我</a></li>
+            <li><a id=service href="javascript:void(0)">服務項目</a></li>
+            <li><a id=tax href="javascript:void(0)">稅費計算</a></li>
+            <li><a id=web href="javascript:void(0)">相關連結</a></li>
+            <li><a id=us href="javascript:void(0)">線上諮詢</a></li>
+        </ul>
+    </DIV>
 
-<div class="border"></div>
-<div class="border">
-	<p>&nbsp;</p>
-	<p>◎預約與線上諮詢◎ <2019/08/10 更新></p>
-	<p>請點擊: <a href="https://line.me/ti/p/XAMg9pljGR"><img src="img/line.png" border="0"  height="40" width="40"/></a>   <a href="https://www.facebook.com/leedayshu/"><img src="img/facebook.png" border="0"  height="40" width="40"/></a></p>			    
-	<p>&nbsp;</p>
-</div>
+    <!--選單結束-->
 
-
-<!--首頁圖開始-->
-
-<DIV id ="content1">
-	<p>&nbsp;</p>
-	<img alt="羅東代書" title="地政士事務所" src="img/IMG_7074.jpg" width="980" height="670" />
-</DIV>
-
-<!--首頁圖結束-->
-
-
-
-
-
-<!--關於我開始-->
-
-<div id=aboutme class="border"></div>
-<DIV id ="H">
-  <h1>關於我</h1>
-</DIV>
-
-<DIV id ="content2A">
-      <p><a href="https://www.facebook.com/leedayshu/" target="_blank"><img alt="李中瑜代書" title="李中瑜代書FB" src="img/9517981-1.jpg-B.jpg" width="143" height="166"/></a></p>
-    <p>李中瑜 地政士</p>
-    <p>專業辦理不動產買賣、贈與、繼承、共有物分割、土地變更、民宿代辦申請等相關業務，深認惟有「誠信配合專業才是確保交易安全」的唯一選項。    </p>
-    <p>&nbsp;</p>
-    <p>手機：0910-393-760    </p>
-    <p>電話：03-9611-836</p>
-    <p>傳真：03-9611-835</p>
-    <p>LINE ID：0910393760 </p>
-    <p><a href="mailto:abc0316@ms29.hinet.net">Email:abc0316@ms29.hinet.net</a></p>
-    <div class="map">
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.6978886469158!2d121.76045500000001!3d24.678918000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e6814431a90f%3A0x7721a20161045dd3!2z5p2O5Lit55Gc5Luj5pu45LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1412352996508" width="350" height="250 frameborder="0" style="border:0"  ></iframe>
+    <div class="border"></div>
+    <div class="border">
+        <p>&nbsp;</p>
+        <p>◎預約與線上諮詢◎ <2019/08/10 更新></p>
+        <p>請點擊: <a href="https://line.me/ti/p/XAMg9pljGR"><img src="img/line.png" border="0" height="40"
+                                                               width="40"/></a>
+            <a href="https://www.facebook.com/leedayshu/"><img src="img/facebook.png" border="0" height="40"
+                                                                width="40"/></a>        <a href="case_sharing.html">案例分享</a></p>
+        <p>&nbsp;</p>
     </div>
-    <p>地址:宜蘭縣羅東鎮四育路105號 </p>
-</DIV>
-    
-    
-    
-<DIV id ="content2B">
-  <p>&nbsp;</p>
-  <ul>
-       <li>地政士、不動產經紀人 執業證照。 </li>
-       <li>中川不動產仲介經紀業 經營許可。 </li>
-       <li>宜蘭縣地政士公會第九屆 總幹事。</li>    
-       <li>曾任職專業法拍代標公司 經理。 </li>
-       <li>曾擔任房屋仲介集團 特約代書。 </li>
-       <li>中華不動產仲裁協會 創會會員。</li>
-  </ul>
-</DIV>
-
-<!--關於我結束-->
-
-
-<!--服務項目開始-->
-
-<div id=aboutservice class="border"></div>
-<DIV id ="H">
-  <h5>服務項目</h5>
-  <h2>(點選展開說明)</h2>
-</DIV>
-
-
-<DIV id ="content3">
-  <ul>
-    <li><a id=service01 href="javascript:void(0)"  onclick="$('#service1').slideToggle(500);"><strong>不動產買賣、繼承、贈與登記</strong></a></li>
-    	<div id=service1 class=service style="display: none" onclick="$('#service1').slideUp(500);" ><a href="javascript:void(0)">	一般不動產之買賣簽約過戶登記【可跨縣市辦理】、代辦一般繼承登記以及依遺囑所為之遺產贈與、遺產管理人等案件之登記、並適時建議客戶規劃土地贈與時之節稅方式。
-      </a></div>
-    <li><a id=service02 href="javascript:void(0)"  onclick="$('#service2').slideToggle(500);"><strong>非都市土地變更及更正登記</strong></a></li>
-   	 <div id=service2 class=service style="display: none" onclick="$('#service2').slideUp(500);"><a href="javascript:void(0)"> 您的不動產所在位置、面積、與毗鄰地相對之地形如符合【非都市土地變更編定】之要件時!有可能麻雀變鳳凰、由農業用地變更為建築用地!或是您所持有之農業用地於符合一定之要件時、想變更為【特定目的事業用地】!您都可先來電洽詢相關法令規定。
-     </a></div>
-    <li><a id=service03 href="javascript:void(0)"  onclick="$('#service3').slideToggle(500);"><strong>代客辦理民宿申請登記</strong></a></li>
-       	<div id=service3 class=service style="display: none" onclick="$('#service3').slideUp(500);"><a href="javascript:void(0)"> 民宿係指利用自用住宅空閒房間，結合當地人文、自然景觀、生態、環境資源及農林漁牧生產活動，以家庭副業方式經營提供旅客鄉野生活之住宿處所；其申請設置須依照民宿管理辦法之相關規定向當地縣市政府提出，於通過審核並取得民宿登記證後才能開始營業、否則將被依發展觀光條例處以新台幣三萬元以上十五萬元以下罰緩並禁止營業。
-      </a></div>
-    <li><a id=service04 href="javascript:void(0)"  onclick="$('#service4').slideToggle(500);"><strong>申請農業設施及辦理保存登記</strong></a></li>
-     <div id=service4 class=service style="display: none" onclick="$('#service4').slideUp(500);"><a href="javascript:void(0)"> 農業用地除依法得申請興建農舍外、尚得依據其他農業法規申請【農業設施】使用!農業設施常見者包含農業資材室、溫室以及花卉或種苗培養室等；申請農業設施各有其不同之要件必須遵循或事先規劃，如果您有此類需求，請來電或親到本事務所探討辦理。
-     </a></div>
-    <li><a id=service05 href="javascript:void(0)" onclick="$('#service5').slideToggle(500);"><strong>遺產稅、贈與稅節稅規劃</strong></a></li>
-     <div id=service5 class=service style="display: none" onclick="$('#service5').slideUp(500);"><a href="javascript:void(0)"> 如果你有一些財產想於將來留給後輩子孫，或者現在就想贈與給兒女或其他人!依據您的財產性質、在我國稅法上有各種不同之免稅或減稅規定可適用!例如︰農業用地【依法作農業使用時】贈與給自己的法定繼承人時!是可以免除贈與稅以及不課徵土地增值稅的!但是；如果你的【農業用地】有違規使用之情形!如果不在適當的時間內及早做好規劃!將來有可能因您的疏忽或不諳法令而無法適用免稅或減稅之規定，平白去繳了一大堆本來無須繳納、或可扣減繳納的【遺產稅】或【贈與稅】!
-     </a></div>
-    <li><a id=service06 href="javascript:void(0)" onclick="$('#service6').slideToggle(500);"><strong>法院拍賣不動產專業諮詢</strong></a></li>
-     <div id=service6 class=service style="display: none" onclick="$('#service6').slideUp(500);"><a href="javascript:void(0)"> 法院所拍賣之不動產常隱藏一些非專業人士所難以了解之陷阱!買受人常因無法了解拍賣公告所揭示之內容或誤解其內容而於拍定後造成【騎虎難下】之窘境!所以；您如果想投標法拍不動產，請先確實了解法律以及相關事實問題後，再行進場投標會較好!
-     </a></div>
-    <li><a id=service07 href="javascript:void(0)" onclick="$('#service7').slideToggle(500);"><strong>辦理銀行貸款及轉貸業務</strong></a></li>
-     <div id=service7 class=service style="display: none" onclick="$('#service7').slideUp(500);"><a href="javascript:void(0)"> 不動產設定抵押權給銀行後、銀行可能會定期【通常是每三個月】調高您的貸款利率!您必須常常去和銀行談判並請他們不要一直往上調整利率!有些銀行會因為您個人的信用狀態良好且想保有客戶而降息!有些銀行則我行我素、意思一下敷衍您!如果您想找其他銀行比較一下利率或乾脆到別家銀行辦理轉貸或增貸!請您來電洽詢銀行相關訊息。
-     </a></div>
-    <li><a id=service08 href="javascript:void(0)" onclick="$('#service8').slideToggle(500);"><strong>代撰法律文書</strong></a></li>
-     <div id=service8 class=service style="display: none" onclick="$('#service8').slideUp(500);"><a href="javascript:void(0)"> 如果你有因【民事非訟事件】所需之法院聲請書、聲明狀、點交狀、異議狀等需要撰寫!又礙於不諳法定程序而浪費時間甚至因條件欠缺而失其效力!請您來電聯絡並敘明案由和經過，本人將儘量提供您相關法律規定或者幫您撰寫各類非訟事件聲請文書。
-     </a></div>
-    <li><a id=service09 href="javascript:void(0)" onclick="$('#service9').slideToggle(500);"><strong>辦理銀行二胎房貸</strong></a></li>
-     <div id=service9 class=service style="display: none" onclick="$('#service9').slideUp(500);"><a href="javascript:void(0)"> 如果你在前順位抵押債權銀行繳息正常、現因故急需資金運用!本人可代為辦理銀行二胎房屋貸款，惟二胎房貸之性質較趨近於『信用借貸』!故借貸人之『信用指數』常影響二胎房貸之申貸成功與否!如有相關需求時，請先來電洽詢。
-     </a></div>
-    <li><a id=service010 href="javascript:void(0)" onclick="$('#service10').slideToggle(500);"><strong>代客查詢不動產相關資料</strong></a></li>
-     <div id=service10 class=service style="display: none" onclick="$('#service10').slideUp(500);"><a href="javascript:void(0)"> 如果你想購買宜蘭地區不動產，卻因不諳法令或對欲購標的物產權不了解!例如﹕本案土地是否有產權瑕疵，是否曾經被用來作為其他土地之法定空地!是否位於限﹙禁﹚建或【限制發展地區】!您皆可來電或來信洽詢!不動產購買金額動輒上千萬，不要等到付了定金或買賣已經成交了、再想到利用法律途徑來解決因買賣所生之產權糾紛問題!
-     </a></div>
-  </ul>
-</DIV>
-
-
-<!--服務項目結束-->
-
-
-
-<!--稅費計算開始-->
-<div id=abouttax class="border"></div>
-<DIV id ="H">
-  <h5>稅費計算</h5>
-    <h2>(點選後展開)</h2>
-</DIV>
-<div id=content5>
-
-<!--土地增值稅開始-->
-<h3><a  id=land class=taxa href="javascript:void(0)" onclick="$('#Form1').slideToggle(500);">土地增值稅</a></h3>
-<FORM name="landtax" ID="Form1"  style="display: none">
-<table cellspacing="1" cellpadding="2" width="100%" border="1" id="Table2">
-                        <tr>
-                          <td width="37%">
-                            <div align="right">土地公告現值</div></td>
-                          <td valign="top" width="63%">
-                          <input name="T1" id="Text1" size="20">
-      元/每平方公尺<font></font></td>
-        </tr>
-                        <tr>
-                          <td>
-                            <div align="right">原規定地價或前次移轉現值</div></td>
-                          <td>
-                          <input name="T2" id="Text2" size="20">
-      元/每平方公尺</td>
-        </tr>
-                        <tr>
-                          <td width="37%" valign="top">
-                            <div align="right">消費者物價總指數</div></td>
-                          <td valign="top" width="63%">              
-                            <input name="T3" id="Text3" size="20">
-                          <a href="http://www.dgbas.gov.tw/public/data/dgbas03/bs3/inquire/cpispleym.xls">(物價指數查詢)</a></td>
-        </tr>
-                        <tr>
-                          <td>
-                            <div align="right">土地面積</div></td>
-                          <td bgcolor="#b9fbfb">
-                          <input name="T4" id="Text4" size="20">
-      平方公尺</td>
-        </tr>
-                        <tr>
-                          <td>
-                            <div align="right">持有年限</div></td>
-                          <td><select name="sel" id="Select1">
-                              <option selected value="0">20年以下</option>
-                              <option value="1">20年以上</option>
-                              <option value="2">30年以上</option>
-                              <option value="3">40年以上</option>
-                            </select>
-                          </td>
-        </tr>
-                        <tr>
-                          <td rowspan="2">
-                            <div align="right">移轉或設典範圍</div></td>
-                          <td valign="top" width="63%">分子：
-                          <input name="T6" id="Text5" size="20"></td>
-        </tr>
-        <tr>
-                          <td bgcolor="#b9fbfb">/分母：
-                              <input name="T5" id="Text6" size="20"></td>
-        </tr>
-                        <tr>
-                          <th colspan="2">
-                            <p align="center">
-                              <input onFocus="taxing()" type="button" value="增值稅估算" name="B1" id="Button1">
-                              <input onFocus="clearing()" type="button" value="清除資料" name="B2" id="Button2">
-                          </p></th>
-                        </tr>
-                        <tr>
-                          <td valign="top">
-                            <div align="right"><b>一般土地應納稅額：</b> </div></td>
-                          <td valign="top">
-                          <input name="T9" id="Text9" size="20" readonly="readonly">
-      元</td>
-        </tr>
-                        <tr>
-                          <td valign="top" nowrap>
-                            <div align="right"><b>自用住宅土地應納稅額：</b></div></td>
-                          <td valign="top">
-                          <input name="T10" id="Text10" size="20" readonly="readonly">
-      元</td>
-        </tr>
-      </table>
-</FORM>
-<!--土地增值稅完畢-->
-
-<!--房屋契稅開始-->
-
-<h3><a id="house1" class=taxa href="javascript:void(0)" onclick="$('#Form2').slideToggle(500);">房屋契稅</a></h3>
-<form method=post id=Form2  style="display: none">
-<center><table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="980" HEIGHT="10" >
-<caption>
-<center>
-<p></p>
-<TBODY></TBODY></center>
-</caption>
-
-<tr>
-<td>
-<center><table BORDER COLS=2 WIDTH="600" HEIGHT="10" BGCOLOR="#B5FDA8" >
-<tr>
-<td WIDTH="100" HEIGHT="10"><b><font face="細明體">契價:</font></b></td>
-
-<td><input name=fa1 onchange=seta1(this) size=10><b><font face="細明體">元</font></b></td>
-</tr>
-
-<tr>
-<td><b><font face="細明體">稅率:</font></b></td>
-
-<td><input name=fa2 onchange=seta2(this) size=5><b><font face="細明體">%</font></b></td>
-</tr>
-
-<tr>
-<td BGCOLOR="#FF99FF"><b><font face="細明體">應繳納契稅:</font></b></td>
-
-<td BGCOLOR="#FF99FF"><input name=fxa1 size=15 readonly="readonly"><b><font face="細明體">元</font></b></td>
-</tr>
-</table></center>
-
-<center><input onclick=taxing2(this.form) type=button value=開始計算></center>
-</td>
-</tr>
-</table></center>
-
-
-<p></p>
-
-
-<center><table BORDER BGCOLOR="#FFFFCC" >
-<caption><TBODY></TBODY></caption>
-
-<tr ALIGN=CENTER>
-<td COLSPAN="6"><b><font face="細明體"><font><font size=+1>稅率表</font></font></font></b></td>
-</tr>
-
-<tr>
-<td><b><font face="細明體">買賣契稅</font></b></td>
-
-<td><b><font face="細明體">交換契稅</font></b></td>
-
-<td><b><font face="細明體">分割契稅</font></b></td>
-
-<td><b><font face="細明體">典權契稅</font></b></td>
-
-<td><b><font face="細明體">贈與契稅</font></b></td>
-
-<td><b><font face="細明體">占有契稅</font></b></td>
-</tr>
-
-<tr ALIGN=CENTER>
-<td><b><font face="細明體">6%</font></b></td>
-
-<td><b><font face="細明體">2%</font></b></td>
-
-<td><b><font face="細明體">2%</font></b></td>
-
-<td><b><font face="細明體">4%</font></b></td>
-
-<td><b><font face="細明體">6%</font></b></td>
 
-<td><b><font face="細明體">6%</font></b></td>
-</tr>
-</table></center>
-</form>
-<!--房屋貸款開始-->
-<h3><a id="house2" class=taxa href="javascript:void(0)" onclick="$('#Form5').slideToggle(500);" >房屋貸款</a></h3>
-
-<form name=loan ID=Form5 style="display: none"></center>
-
-<center><table BORDER=0 CELLPADDING=2 >
-<caption>
-<center>
-<p></p>
-<TBODY></TBODY></center>
-</caption>
-
-<tr>
-<td><b><font face="細明體">貸款金額:</font></b></td>
-
-<td><input maxLength=8 name=i1 size=8><b><font face="細明體">萬元</font></b></td>
-</tr>
-
-<tr>
-<td><b><font face="細明體">貸款年限:</font></b></td>
-
-<td><input maxLength=8 name=i2 size=8><b><font face="細明體">年</font></b></td>
-</tr>
-
-<tr>
-<td><b><font face="細明體">寬 限 期:</font></b></td>
-
-<td><input maxLength=8 name=i3 size=8><b><font face="細明體">年</font></b></td>
-</tr>
-
-<tr>
-<td><b><font face="細明體">貸款利率:</font></b></td>
-
-<td><input maxLength=8 name=i4 size=8><b><font face="細明體">%</font></b></td>
-</tr>
-</table></center>
-
-<center><input onclick=GetLoan() type=button value="開始計算"></center>
-
-<center><table BORDER=0 CELLPADDING=2 >
-<caption>
-
-<center></TBODY></center>
-</caption>
-
-<tr>
-<td VALIGN=TOP><b><font face="細明體"><font color="#FF0000">一、本息平均攤還法</font></font></b></td>
-
-<td VALIGN=TOP><b><font face="細明體"><font color="#000000">1.寬限期內月付:</font></font></b></td>
-
-<td VALIGN=TOP><input maxLength=8 name=r1 size=8><b><font face="細明體"><font color="#000000">元</font><i><font color="#3333FF">(<u>只付利息不付本金</u>)</font></i></font></b></td>
-</tr>
-
-<tr>
-<td><b><font face="細明體">　</font></b></td>
-
-<td><b><font face="細明體">2.寬限期後月付:</font></b></td>
-
-<td><input maxLength=8 name=r2 size=8><b><font face="細明體">元</font></b></td>
-</tr>
-
-<tr>
-<td NOWRAP><b><font face="細明體">　</font></b></td>
-
-<td><b><font face="細明體">　</font></b></td>
-
-<td><b><font face="細明體">　</font></b></td>
-</tr>
-
-<tr>
-<td VALIGN=TOP><b><font face="細明體"><font color="#FF0000">二、本金平均攤還法</font></font></b></td>
-
-<td VALIGN=TOP NOWRAP><b><font face="細明體">1.寬限期內月付:</font></b></td>
-
-<td VALIGN=TOP><input maxLength=8 name=r3 size=8><b><font face="細明體">元<font color="#3333FF">(<i><u>只付利息不付本金</u></i>)</font></font></b></td>
-</tr>
-
-<tr>
-<td><b><font face="細明體">　</font></b></td>
-
-<td COLSPAN="2" NOWRAP><b><font face="細明體">2.寬限期後:&nbsp;</font></b>
-<br><textarea cols=30 name=r4 rows=10></textarea></td>
-</tr>
-</table></center>
-</form>
-<h3><a class=taxa href="http://www.etax.nat.gov.tw/etwmain/front/ETW158W6" target="_blank" >遺產稅</a></h3>
-<h4>【財務部稅務入口網】</h4>
-
-<h3><a class=taxa href="http://www.etax.nat.gov.tw/etwmain/front/ETW158W7" target="_blank" >贈與稅</a></h3>
-<h4>【財務部稅務入口網】</h4>
-<h3><a href="tax/swe-fe.html" target="_blank" id=oldtax >舊版稅費計算</a></h3>
-<h4>【方便影印與加入書籤】</h4>
-
-
-
-
-</div>
-<!--房屋貸款結束-->
-<!--稅費計算結束-->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=355040711326416&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!--相關網站開始-->
-<div id=aboutweb class="border"></div>
-<DIV id ="H">
-  <h5>相關網站</h5>
-</DIV>
-<div id=content6>
-<div id=yes319>
-	
-  <p><a href="https://www.equick.com.tw/yellowpage/coinfo-%E9%87%91%E8%9E%8D%E5%B7%A5%E5%95%86-%E5%9C%B0%E6%94%BF%E5%A3%AB%E4%BA%8B%E5%8B%99%E6%89%80-8243.html" target="_parent">e-捷網</a></p>	
-  <p><a href="http://www.54168.com.tw/portal/index.aspx" target="_parent">寬頻房訊</a>	  
-  <p><a href="http://law.moj.gov.tw/" target="_blank">全國法規資料庫</a></p>
-  <p><a href="http://blog.xuite.net/abc0316999/twblog" target="_parent">李中瑜代書部落格</a>
-  <p><a href="https://www.facebook.com/leedayshu/" target="_blank">李中瑜臉書服務專頁</a></p>
-  <p><a href="http://ilan.915.tw/store/0910393760/" target="_parent">宜蘭縣不動產仲介公會</a></p>
-  <p><a href="http://www.宜蘭土地代書.tw/" target="_parent">宜蘭土地宜蘭房屋資訊網</a></p>
-     <a href="http://lvr.land.moi.gov.tw/N11/homePage.action" target="_parent">不動產交易價格查詢服務網</a></p>
-</div>
-</div>
-<!--相關網站結束-->
-
-<!--線上諮詢開始-->
-<div id=aboutus class="border"></div>
-<DIV id ="H">
-  <h5>線上諮詢</h5>
-  <h2>(聯絡完畢將刪除留言，請放心詢問)</h2>
-
-</DIV>
-<div id=content7>
-<div class="fb-comments" data-href="https://lidayshu.com/index.html" data-width="980" data-numposts="6" data-colorscheme="light"></div>
-</div>
-<!--線上諮詢結束-->
-<div id ="footer"><p style="font-size:20px;">統計人數:<img src="https://sitestates.com/show/image/32720/enable/4.jpg" border="0"  height="60" width="180"/></br>
-2019 copyright(c) 李中瑜地政士事務所 all rights reserved</p>
-</div>
+
+    <!--首頁圖開始-->
+
+    <DIV id="content1">
+        <p>&nbsp;</p>
+        <img alt="羅東代書" title="地政士事務所" src="img/IMG_7074.jpg" width="980" height="670"/>
+    </DIV>
+
+    <!--首頁圖結束-->
+
+
+    <!--關於我開始-->
+
+    <div id=aboutme class="border"></div>
+    <DIV id="H">
+        <h1>關於我</h1>
+    </DIV>
+
+    <DIV id="content2A">
+        <p><a href="https://www.facebook.com/leedayshu/" target="_blank"><img alt="李中瑜代書" title="李中瑜代書FB"
+                                                                              src="img/9517981-1.jpg-B.jpg" width="143"
+                                                                              height="166"/></a></p>
+        <p>李中瑜 地政士</p>
+        <p>專業辦理不動產買賣、贈與、繼承、共有物分割、土地變更、民宿代辦申請等相關業務，深認惟有「誠信配合專業才是確保交易安全」的唯一選項。 </p>
+        <p>&nbsp;</p>
+        <p>手機：0910-393-760 </p>
+        <p>電話：03-9611-836</p>
+        <p>傳真：03-9611-835</p>
+        <p>LINE ID：0910393760 </p>
+        <p><a href="mailto:abc0316@ms29.hinet.net">Email:abc0316@ms29.hinet.net</a></p>
+        <div class="map">
+            <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.6978886469158!2d121.76045500000001!3d24.678918000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e6814431a90f%3A0x7721a20161045dd3!2z5p2O5Lit55Gc5Luj5pu45LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1412352996508"
+                    width="350" height="250 frameborder=" 0
+            " style="border:0" ></iframe>
+        </div>
+        <p>地址:宜蘭縣羅東鎮四育路105號 </p>
+    </DIV>
+
+
+    <DIV id="content2B">
+        <p>&nbsp;</p>
+        <ul>
+            <li>地政士、不動產經紀人 執業證照。</li>
+            <li>中川不動產仲介經紀業 經營許可。</li>
+            <li>宜蘭縣地政士公會第九屆 總幹事。</li>
+            <li>曾任職專業法拍代標公司 經理。</li>
+            <li>曾擔任房屋仲介集團 特約代書。</li>
+            <li>中華不動產仲裁協會 創會會員。</li>
+        </ul>
+    </DIV>
+
+    <!--關於我結束-->
+
+
+    <!--服務項目開始-->
+
+    <div id=aboutservice class="border"></div>
+    <DIV id="H">
+        <h5>服務項目</h5>
+        <h2>(點選展開說明)</h2>
+    </DIV>
+
+
+    <DIV id="content3">
+        <ul>
+            <li><a id=service01 href="javascript:void(0)" onclick="$('#service1').slideToggle(500);"><strong>不動產買賣、繼承、贈與登記</strong></a>
+            </li>
+            <div id=service1 class=service style="display: none" onclick="$('#service1').slideUp(500);"><a
+                    href="javascript:void(0)">
+                一般不動產之買賣簽約過戶登記【可跨縣市辦理】、代辦一般繼承登記以及依遺囑所為之遺產贈與、遺產管理人等案件之登記、並適時建議客戶規劃土地贈與時之節稅方式。
+            </a></div>
+            <li><a id=service02 href="javascript:void(0)" onclick="$('#service2').slideToggle(500);"><strong>非都市土地變更及更正登記</strong></a>
+            </li>
+            <div id=service2 class=service style="display: none" onclick="$('#service2').slideUp(500);"><a
+                    href="javascript:void(0)">
+                您的不動產所在位置、面積、與毗鄰地相對之地形如符合【非都市土地變更編定】之要件時!有可能麻雀變鳳凰、由農業用地變更為建築用地!或是您所持有之農業用地於符合一定之要件時、想變更為【特定目的事業用地】!您都可先來電洽詢相關法令規定。
+            </a></div>
+            <li><a id=service03 href="javascript:void(0)"
+                   onclick="$('#service3').slideToggle(500);"><strong>代客辦理民宿申請登記</strong></a></li>
+            <div id=service3 class=service style="display: none" onclick="$('#service3').slideUp(500);"><a
+                    href="javascript:void(0)">
+                民宿係指利用自用住宅空閒房間，結合當地人文、自然景觀、生態、環境資源及農林漁牧生產活動，以家庭副業方式經營提供旅客鄉野生活之住宿處所；其申請設置須依照民宿管理辦法之相關規定向當地縣市政府提出，於通過審核並取得民宿登記證後才能開始營業、否則將被依發展觀光條例處以新台幣三萬元以上十五萬元以下罰緩並禁止營業。
+            </a></div>
+            <li><a id=service04 href="javascript:void(0)" onclick="$('#service4').slideToggle(500);"><strong>申請農業設施及辦理保存登記</strong></a>
+            </li>
+            <div id=service4 class=service style="display: none" onclick="$('#service4').slideUp(500);"><a
+                    href="javascript:void(0)">
+                農業用地除依法得申請興建農舍外、尚得依據其他農業法規申請【農業設施】使用!農業設施常見者包含農業資材室、溫室以及花卉或種苗培養室等；申請農業設施各有其不同之要件必須遵循或事先規劃，如果您有此類需求，請來電或親到本事務所探討辦理。
+            </a></div>
+            <li><a id=service05 href="javascript:void(0)"
+                   onclick="$('#service5').slideToggle(500);"><strong>遺產稅、贈與稅節稅規劃</strong></a></li>
+            <div id=service5 class=service style="display: none" onclick="$('#service5').slideUp(500);"><a
+                    href="javascript:void(0)">
+                如果你有一些財產想於將來留給後輩子孫，或者現在就想贈與給兒女或其他人!依據您的財產性質、在我國稅法上有各種不同之免稅或減稅規定可適用!例如︰農業用地【依法作農業使用時】贈與給自己的法定繼承人時!是可以免除贈與稅以及不課徵土地增值稅的!但是；如果你的【農業用地】有違規使用之情形!如果不在適當的時間內及早做好規劃!將來有可能因您的疏忽或不諳法令而無法適用免稅或減稅之規定，平白去繳了一大堆本來無須繳納、或可扣減繳納的【遺產稅】或【贈與稅】!
+            </a></div>
+            <li><a id=service06 href="javascript:void(0)"
+                   onclick="$('#service6').slideToggle(500);"><strong>法院拍賣不動產專業諮詢</strong></a></li>
+            <div id=service6 class=service style="display: none" onclick="$('#service6').slideUp(500);"><a
+                    href="javascript:void(0)">
+                法院所拍賣之不動產常隱藏一些非專業人士所難以了解之陷阱!買受人常因無法了解拍賣公告所揭示之內容或誤解其內容而於拍定後造成【騎虎難下】之窘境!所以；您如果想投標法拍不動產，請先確實了解法律以及相關事實問題後，再行進場投標會較好!
+            </a></div>
+            <li><a id=service07 href="javascript:void(0)"
+                   onclick="$('#service7').slideToggle(500);"><strong>辦理銀行貸款及轉貸業務</strong></a></li>
+            <div id=service7 class=service style="display: none" onclick="$('#service7').slideUp(500);"><a
+                    href="javascript:void(0)">
+                不動產設定抵押權給銀行後、銀行可能會定期【通常是每三個月】調高您的貸款利率!您必須常常去和銀行談判並請他們不要一直往上調整利率!有些銀行會因為您個人的信用狀態良好且想保有客戶而降息!有些銀行則我行我素、意思一下敷衍您!如果您想找其他銀行比較一下利率或乾脆到別家銀行辦理轉貸或增貸!請您來電洽詢銀行相關訊息。
+            </a></div>
+            <li><a id=service08 href="javascript:void(0)"
+                   onclick="$('#service8').slideToggle(500);"><strong>代撰法律文書</strong></a></li>
+            <div id=service8 class=service style="display: none" onclick="$('#service8').slideUp(500);"><a
+                    href="javascript:void(0)">
+                如果你有因【民事非訟事件】所需之法院聲請書、聲明狀、點交狀、異議狀等需要撰寫!又礙於不諳法定程序而浪費時間甚至因條件欠缺而失其效力!請您來電聯絡並敘明案由和經過，本人將儘量提供您相關法律規定或者幫您撰寫各類非訟事件聲請文書。
+            </a></div>
+            <li><a id=service09 href="javascript:void(0)"
+                   onclick="$('#service9').slideToggle(500);"><strong>辦理銀行二胎房貸</strong></a></li>
+            <div id=service9 class=service style="display: none" onclick="$('#service9').slideUp(500);"><a
+                    href="javascript:void(0)">
+                如果你在前順位抵押債權銀行繳息正常、現因故急需資金運用!本人可代為辦理銀行二胎房屋貸款，惟二胎房貸之性質較趨近於『信用借貸』!故借貸人之『信用指數』常影響二胎房貸之申貸成功與否!如有相關需求時，請先來電洽詢。
+            </a></div>
+            <li><a id=service010 href="javascript:void(0)" onclick="$('#service10').slideToggle(500);"><strong>代客查詢不動產相關資料</strong></a>
+            </li>
+            <div id=service10 class=service style="display: none" onclick="$('#service10').slideUp(500);"><a
+                    href="javascript:void(0)">
+                如果你想購買宜蘭地區不動產，卻因不諳法令或對欲購標的物產權不了解!例如﹕本案土地是否有產權瑕疵，是否曾經被用來作為其他土地之法定空地!是否位於限﹙禁﹚建或【限制發展地區】!您皆可來電或來信洽詢!不動產購買金額動輒上千萬，不要等到付了定金或買賣已經成交了、再想到利用法律途徑來解決因買賣所生之產權糾紛問題!
+            </a></div>
+        </ul>
+    </DIV>
+
+
+    <!--服務項目結束-->
+
+
+    <!--稅費計算開始-->
+    <div id=abouttax class="border"></div>
+    <DIV id="H">
+        <h5>稅費計算</h5>
+        <h2>(點選後展開)</h2>
+    </DIV>
+    <div id=content5>
+
+        <!--土地增值稅開始-->
+        <h3><a id=land class=taxa href="javascript:void(0)" onclick="$('#Form1').slideToggle(500);">土地增值稅</a></h3>
+        <FORM name="landtax" ID="Form1" style="display: none">
+            <table cellspacing="1" cellpadding="2" width="100%" border="1" id="Table2">
+                <tr>
+                    <td width="37%">
+                        <div align="right">土地公告現值</div>
+                    </td>
+                    <td valign="top" width="63%">
+                        <input name="T1" id="Text1" size="20">
+                        元/每平方公尺<font></font></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">原規定地價或前次移轉現值</div>
+                    </td>
+                    <td>
+                        <input name="T2" id="Text2" size="20">
+                        元/每平方公尺
+                    </td>
+                </tr>
+                <tr>
+                    <td width="37%" valign="top">
+                        <div align="right">消費者物價總指數</div>
+                    </td>
+                    <td valign="top" width="63%">
+                        <input name="T3" id="Text3" size="20">
+                        <a href="http://www.dgbas.gov.tw/public/data/dgbas03/bs3/inquire/cpispleym.xls">(物價指數查詢)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">土地面積</div>
+                    </td>
+                    <td bgcolor="#b9fbfb">
+                        <input name="T4" id="Text4" size="20">
+                        平方公尺
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">持有年限</div>
+                    </td>
+                    <td><select name="sel" id="Select1">
+                        <option selected value="0">20年以下</option>
+                        <option value="1">20年以上</option>
+                        <option value="2">30年以上</option>
+                        <option value="3">40年以上</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <div align="right">移轉或設典範圍</div>
+                    </td>
+                    <td valign="top" width="63%">分子：
+                        <input name="T6" id="Text5" size="20"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#b9fbfb">/分母：
+                        <input name="T5" id="Text6" size="20"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <p align="center">
+                            <input onFocus="taxing()" type="button" value="增值稅估算" name="B1" id="Button1">
+                            <input onFocus="clearing()" type="button" value="清除資料" name="B2" id="Button2">
+                        </p></th>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <div align="right"><b>一般土地應納稅額：</b></div>
+                    </td>
+                    <td valign="top">
+                        <input name="T9" id="Text9" size="20" readonly="readonly">
+                        元
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" nowrap>
+                        <div align="right"><b>自用住宅土地應納稅額：</b></div>
+                    </td>
+                    <td valign="top">
+                        <input name="T10" id="Text10" size="20" readonly="readonly">
+                        元
+                    </td>
+                </tr>
+            </table>
+        </FORM>
+        <!--土地增值稅完畢-->
+
+        <!--房屋契稅開始-->
+
+        <h3><a id="house1" class=taxa href="javascript:void(0)" onclick="$('#Form2').slideToggle(500);">房屋契稅</a></h3>
+        <form method=post id=Form2 style="display: none">
+            <center>
+                <table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="980" HEIGHT="10">
+                    <caption>
+                        <center>
+                            <p></p>
+                            <TBODY></TBODY>
+                        </center>
+                    </caption>
+
+                    <tr>
+                        <td>
+                            <center>
+                                <table BORDER COLS=2 WIDTH="600" HEIGHT="10" BGCOLOR="#B5FDA8">
+                                    <tr>
+                                        <td WIDTH="100" HEIGHT="10"><b><font face="細明體">契價:</font></b></td>
+
+                                        <td><input name=fa1 onchange=seta1(this) size=10><b><font
+                                                face="細明體">元</font></b></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><b><font face="細明體">稅率:</font></b></td>
+
+                                        <td><input name=fa2 onchange=seta2(this) size=5><b><font face="細明體">%</font></b>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td BGCOLOR="#FF99FF"><b><font face="細明體">應繳納契稅:</font></b></td>
+
+                                        <td BGCOLOR="#FF99FF"><input name=fxa1 size=15 readonly="readonly"><b><font
+                                                face="細明體">元</font></b></td>
+                                    </tr>
+                                </table>
+                            </center>
+
+                            <center><input onclick=taxing2(this.form) type=button value=開始計算></center>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+
+
+            <p></p>
+
+
+            <center>
+                <table BORDER BGCOLOR="#FFFFCC">
+                    <caption>
+                        <TBODY></TBODY>
+                    </caption>
+
+                    <tr ALIGN=CENTER>
+                        <td COLSPAN="6"><b><font face="細明體"><font><font size=+1>稅率表</font></font></font></b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><font face="細明體">買賣契稅</font></b></td>
+
+                        <td><b><font face="細明體">交換契稅</font></b></td>
+
+                        <td><b><font face="細明體">分割契稅</font></b></td>
+
+                        <td><b><font face="細明體">典權契稅</font></b></td>
+
+                        <td><b><font face="細明體">贈與契稅</font></b></td>
+
+                        <td><b><font face="細明體">占有契稅</font></b></td>
+                    </tr>
+
+                    <tr ALIGN=CENTER>
+                        <td><b><font face="細明體">6%</font></b></td>
+
+                        <td><b><font face="細明體">2%</font></b></td>
+
+                        <td><b><font face="細明體">2%</font></b></td>
+
+                        <td><b><font face="細明體">4%</font></b></td>
+
+                        <td><b><font face="細明體">6%</font></b></td>
+
+                        <td><b><font face="細明體">6%</font></b></td>
+                    </tr>
+                </table>
+            </center>
+        </form>
+        <!--房屋貸款開始-->
+        <h3><a id="house2" class=taxa href="javascript:void(0)" onclick="$('#Form5').slideToggle(500);">房屋貸款</a></h3>
+
+        <form name=loan ID=Form5 style="display: none"></center>
+
+            <center>
+                <table BORDER=0 CELLPADDING=2>
+                    <caption>
+                        <center>
+                            <p></p>
+                            <TBODY></TBODY>
+                        </center>
+                    </caption>
+
+                    <tr>
+                        <td><b><font face="細明體">貸款金額:</font></b></td>
+
+                        <td><input maxLength=8 name=i1 size=8><b><font face="細明體">萬元</font></b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><font face="細明體">貸款年限:</font></b></td>
+
+                        <td><input maxLength=8 name=i2 size=8><b><font face="細明體">年</font></b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><font face="細明體">寬 限 期:</font></b></td>
+
+                        <td><input maxLength=8 name=i3 size=8><b><font face="細明體">年</font></b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><font face="細明體">貸款利率:</font></b></td>
+
+                        <td><input maxLength=8 name=i4 size=8><b><font face="細明體">%</font></b></td>
+                    </tr>
+                </table>
+            </center>
+
+            <center><input onclick=GetLoan() type=button value="開始計算"></center>
+
+            <center>
+                <table BORDER=0 CELLPADDING=2>
+                    <caption>
+
+                        <center></TBODY></center>
+                    </caption>
+
+                    <tr>
+                        <td VALIGN=TOP><b><font face="細明體"><font color="#FF0000">一、本息平均攤還法</font></font></b></td>
+
+                        <td VALIGN=TOP><b><font face="細明體"><font color="#000000">1.寬限期內月付:</font></font></b></td>
+
+                        <td VALIGN=TOP><input maxLength=8 name=r1 size=8><b><font face="細明體"><font
+                                color="#000000">元</font><i><font color="#3333FF">(<u>只付利息不付本金</u>)</font></i></font></b>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b><font face="細明體">　</font></b></td>
+
+                        <td><b><font face="細明體">2.寬限期後月付:</font></b></td>
+
+                        <td><input maxLength=8 name=r2 size=8><b><font face="細明體">元</font></b></td>
+                    </tr>
+
+                    <tr>
+                        <td NOWRAP><b><font face="細明體">　</font></b></td>
+
+                        <td><b><font face="細明體">　</font></b></td>
+
+                        <td><b><font face="細明體">　</font></b></td>
+                    </tr>
+
+                    <tr>
+                        <td VALIGN=TOP><b><font face="細明體"><font color="#FF0000">二、本金平均攤還法</font></font></b></td>
+
+                        <td VALIGN=TOP NOWRAP><b><font face="細明體">1.寬限期內月付:</font></b></td>
+
+                        <td VALIGN=TOP><input maxLength=8 name=r3 size=8><b><font face="細明體">元<font color="#3333FF">(<i><u>只付利息不付本金</u></i>)</font></font></b>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><b><font face="細明體">　</font></b></td>
+
+                        <td COLSPAN="2" NOWRAP><b><font face="細明體">2.寬限期後:&nbsp;</font></b>
+                            <br><textarea cols=30 name=r4 rows=10></textarea></td>
+                    </tr>
+                </table>
+            </center>
+        </form>
+        <h3><a class=taxa href="http://www.etax.nat.gov.tw/etwmain/front/ETW158W6" target="_blank">遺產稅</a></h3>
+        <h4>【財務部稅務入口網】</h4>
+
+        <h3><a class=taxa href="http://www.etax.nat.gov.tw/etwmain/front/ETW158W7" target="_blank">贈與稅</a></h3>
+        <h4>【財務部稅務入口網】</h4>
+        <h3><a href="tax/swe-fe.html" target="_blank" id=oldtax>舊版稅費計算</a></h3>
+        <h4>【方便影印與加入書籤】</h4>
+
+
+    </div>
+    <!--房屋貸款結束-->
+    <!--稅費計算結束-->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=355040711326416&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!--相關網站開始-->
+    <div id=aboutweb class="border"></div>
+    <DIV id="H">
+        <h5>相關網站</h5>
+    </DIV>
+    <div id=content6>
+        <div id=yes319>
+
+            <p>
+                <a href="https://www.equick.com.tw/yellowpage/coinfo-%E9%87%91%E8%9E%8D%E5%B7%A5%E5%95%86-%E5%9C%B0%E6%94%BF%E5%A3%AB%E4%BA%8B%E5%8B%99%E6%89%80-8243.html"
+                   target="_parent">e-捷網</a></p>
+            <p><a href="http://www.54168.com.tw/portal/index.aspx" target="_parent">寬頻房訊</a>
+            <p><a href="http://law.moj.gov.tw/" target="_blank">全國法規資料庫</a></p>
+            <p><a href="http://blog.xuite.net/abc0316999/twblog" target="_parent">李中瑜代書部落格</a>
+            <p><a href="https://www.facebook.com/leedayshu/" target="_blank">李中瑜臉書服務專頁</a></p>
+            <p><a href="http://ilan.915.tw/store/0910393760/" target="_parent">宜蘭縣不動產仲介公會</a></p>
+            <p><a href="http://www.宜蘭土地代書.tw/" target="_parent">宜蘭土地宜蘭房屋資訊網</a></p>
+            <a href="http://lvr.land.moi.gov.tw/N11/homePage.action" target="_parent">不動產交易價格查詢服務網</a></p>
+        </div>
+    </div>
+    <!--相關網站結束-->
+
+    <!--線上諮詢開始-->
+    <div id=aboutus class="border"></div>
+    <DIV id="H">
+        <h5>線上諮詢</h5>
+        <h2>(聯絡完畢將刪除留言，請放心詢問)</h2>
+
+    </DIV>
+    <div id=content7>
+        <div class="fb-comments" data-href="https://lidayshu.com/index.html" data-width="980" data-numposts="6"
+             data-colorscheme="light"></div>
+    </div>
+    <!--線上諮詢結束-->
+    <div id="footer"><p style="font-size:20px;">統計人數:<img src="https://sitestates.com/show/image/32720/enable/4.jpg"
+                                                          border="0" height="60" width="180"/></br>
+        2019 copyright(c) 李中瑜地政士事務所 all rights reserved</p>
+    </div>
 </Div>
 
 </body>
