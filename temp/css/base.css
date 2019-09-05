@@ -1,7 +1,9 @@
 body {
   /*padding-top: 3.5em;*/
 }
-
+*{
+  font-family:"標楷體";
+}
 /*row 1*/
 nav .btn-group {
   margin: 0.8rem 2rem 0 0;
@@ -21,7 +23,19 @@ section#intro-header .wrap-headline {
   padding-top: 15%;
   padding-bottom: 15%;
 }
-
+.map-container-6{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-6 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
 section#intro-header h1,
 section#intro-header h2 {
   color: #FFF;
@@ -205,6 +219,12 @@ section#team h5 {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+/*section#team .card-img-top {*/
+/*    width:100%;*/
+/*    height: 15vw;*/
+/*    object-fit: cover;*/
+/*}*/
 
 /*contact page*/
 section#contact form {

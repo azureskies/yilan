@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/base.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
     <![endif]-->
 </head>
 <body>
@@ -52,6 +56,18 @@
     <!--        <h2 class="text-center">Tagline message</h2>-->
     <!--    </div>-->
 </section>
+<section id="reservation">
+    <h6>◎預約與線上諮詢◎ <2019/08/10 更新></h6>
+    <p>請點擊:
+        <a href="https://line.me/ti/p/XAMg9pljGR">
+            <img src="img/line.png" border="0" height="40" width="40"/>
+        </a>
+
+        <a href="https://www.facebook.com/leedayshu/">
+            <img src="img/facebook.png" border="0" height="40" width="40"/>
+        </a>
+    </p>
+</section>
 <section id="homepage">
     <img class="mx-auto d-block" alt="羅東代書" title="地政士事務所" src="img/homepage_b.jpg"/>
 </section>
@@ -59,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <div class="card" style="width:400px">
+                <div class="card">
                     <img class="card-img-top" src="img/9517981-1.jpg-B.jpg" alt="Card image">
                     <div class="card-body">
                         <h1 class="card-title">李中瑜</h1>
@@ -68,30 +84,82 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <p>◎預約與線上諮詢◎ <2019/09/15 更新></p>
-                <p>請點擊:
-                    <a href="https://line.me/ti/p/XAMg9pljGR">
-                        <img src="img/line.png" border="0" height="40" width="40"/>
-                    </a>
 
-                    <a href="https://www.facebook.com/leedayshu/">
-                        <img src="img/facebook.png" border="0" height="40" width="40"/>
-                    </a>
-                </p>
-                <p>手機：0910-393-760 </p>
-                <p>電話：03-9611-836</p>
-                <p>傳真：03-9611-835</p>
-                <p>LINE ID：0910393760 </p>
-                <p><a href="mailto:abc0316@ms29.hinet.net">Email:abc0316@ms29.hinet.net</a></p>
-                <div class="map">
-                    <iframe class="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.6978886469158!2d121.76045500000001!3d24.678918000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e6814431a90f%3A0x7721a20161045dd3!2z5p2O5Lit55Gc5Luj5pu45LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1412352996508"
-                            width="500" height="300" frameborder="0" style="border:0"></iframe>
+            <!--Grid column-->
+            <div class="col-sm-6">
+
+                <!--Google map-->
+                <div id="map-container-google-11" class="z-depth-1-half map-container-6" style="height: 400px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.6978886469158!2d121.76045500000001!3d24.678918000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e6814431a90f%3A0x7721a20161045dd3!2z5p2O5Lit55Gc5Luj5pu45LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1412352996508"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                <p></p>
-                <h3>地址:宜蘭縣羅東鎮四育路105號 </h3>
+
+                <br>
+                <!--Buttons-->
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a><i class="fas fa-fax"
+                              style="font-size:48px;color:lightskyblue;"></i></a>
+                        <p>電話：03-9611-836</p>
+                        <p></br></p>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <a><i class="fas fa-phone"
+                              style="font-size:48px;color:lightskyblue;"></i></a>
+                        <p>手機:0910-393-760</p>
+                        <p></br></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="mailto:abc0316@ms29.hinet.net"><i class="fas fa-envelope"
+                                                                   style="font-size:48px;color:lightskyblue;"></i></a>
+                        <p><a href="mailto:abc0316@ms29.hinet.net">abc0316@ms29.hinet.net</a></p>
+                        <p></br></p>
+
+
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <a href="https://www.facebook.com/leedayshu/"><i class="fab fa-facebook"
+                                                                         style="font-size:48px;color:lightskyblue;"></i></a>
+                        <p>臉書帳號：<a href="https://www.facebook.com/leedayshu/">leedayshu</a></p>
+                        <p></br></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <a href="https://line.me/ti/p/XAMg9pljGR"><i class="fab fa-line"
+                                                                     style="font-size:48px;color:lightskyblue;"></i></a>
+                        <p>LINE ID：<a href="https://line.me/ti/p/XAMg9pljGR">0910393760</a></p>
+                        <p></br></p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.google.com/maps/place/%E6%9D%8E%E4%B8%AD%E7%91%9C%E5%9C%B0%E6%94%BF%E5%A3%AB(%E4%BB%A3%E6%9B%B8)%E4%BA%8B%E5%8B%99%E6%89%80-%E5%AE%9C%E8%98%AD%E3%80%81%E7%BE%85%E6%9D%B1/@24.6788639,121.7582893,17z/data=!3m1!4b1!4m5!3m4!1s0x3467e6814431a90f:0x7721a20161045dd3!8m2!3d24.678859!4d121.760478"
+                           class="btn-floating"><i class="fas fa-map-marker-alt"
+                                                   style="font-size:48px;color:lightskyblue;"></i></a>
+                        <br>宜蘭縣羅東鎮四育路105號</p>
+                    </div>
+                </div>
+
             </div>
+            <!--            <div class="col-sm-6">-->
+
+
+            <!--                <p>手機：0910-393-760 </p>-->
+            <!--                <p>電話：03-9611-836</p>-->
+            <!--                <p>傳真：03-9611-835</p>-->
+            <!--                <p>LINE ID：0910393760 </p>-->
+            <!--                <p>Email:<a href="mailto:abc0316@ms29.hinet.net">abc0316@ms29.hinet.net</a></p>-->
+            <!--                <div class="map">-->
+            <!--                    <iframe class="map"-->
+            <!--                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.6978886469158!2d121.76045500000001!3d24.678918000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e6814431a90f%3A0x7721a20161045dd3!2z5p2O5Lit55Gc5Luj5pu45LqL5YuZ5omA!5e0!3m2!1szh-TW!2stw!4v1412352996508"-->
+            <!--                            width="500" height="500" frameborder="0" style="border:0"></iframe>-->
+            <!--                </div>-->
+            <!--                <p></p>-->
+            <!--                <h4>地址:宜蘭縣羅東鎮四育路105號 </h4>-->
+            <!--            </div>-->
 
 
         </div>
@@ -134,37 +202,37 @@
         <div class="row">
             <div class="col-sm-2 col-md-4">
                 <div class="feature">
-                    <img src="img/certification_b_b.png" >
+                    <img src="img/certification_b_b.png">
                     <span class="feature-tag">地政士、不動產經紀人 執業證照。</span>
                 </div>
             </div>
             <div class="col-sm-2 col-md-4">
                 <div class="feature">
-                    <img src="img/license_b.png" >
+                    <img src="img/license_b.png">
                     <span class="feature-tag">中川不動產仲介經紀業 經營許可。</span>
                 </div>
             </div>
             <div class="col-sm-2 col-md-4">
                 <div class="feature">
-                    <img src="img/director_b.png" >
+                    <img src="img/director_b.png">
                     <span class="feature-tag">宜蘭縣地政士公會第九屆 總幹事。</span>
                 </div>
             </div>
             <div class="col-sm-2 col-md-4">
                 <div class="feature">
-                    <img src="img/sales_b_b.png" >
+                    <img src="img/sales_b_b.png">
                     <span class="feature-tag">曾任職專業法拍代標公司 經理。</span>
                 </div>
             </div>
             <div class="col-sm-2 col-md-4">
                 <div class="feature">
-                    <img src="img/landlord_b_b.png" >
+                    <img src="img/landlord_b_b.png">
                     <span class="feature-tag">曾擔任房屋仲介集團 特約代書。</span>
                 </div>
             </div>
             <div class="col-sm-2 col-md-4">
                 <div class="feature">
-                    <img src="img/arbitration_b_b.png" >
+                    <img src="img/arbitration_b_b.png">
                     <span class="feature-tag">中華不動產仲裁協會 創會會員。</span>
                 </div>
             </div>
@@ -293,47 +361,47 @@
 <!--    </form>-->
 <!--</section>-->
 
-<footer>
-    <div class="container">
-        <div class="col-sm-2">
-            <img src="imgs/logo.png" class="img-responsive">
-        </div>
-        <div class="col-sm-2">
-            <h5>The company</h5>
-            <ul class="list-unstyled">
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Packt publisher</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-2">
-            <h5>Social</h5>
-            <ul class="list-unstyled">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-2">
-            <h5>Support</h5>
-            <ul class="list-unstyled">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Privacy police</a></li>
-                <li><a href="#">Terms & conditions</a></li>
-                <li><a href="#">Help desk</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-4">
-            <address>
-                <strong>Name, Inc.</strong>
-                Address line 1<br>
-                Address line 2<br>
-                <abbr title="Phone">P:</abbr> (123) 456-7890
-            </address>
-        </div>
-    </div>
-</footer>
+<!--<footer>-->
+<!--    <div class="container">-->
+<!--        <div class="col-sm-2">-->
+<!--            <img src="imgs/logo.png" class="img-responsive">-->
+<!--        </div>-->
+<!--        <div class="col-sm-2">-->
+<!--            <h5>The company</h5>-->
+<!--            <ul class="list-unstyled">-->
+<!--                <li><a href="#">Documentation</a></li>-->
+<!--                <li><a href="#">Packt publisher</a></li>-->
+<!--                <li><a href="#">About us</a></li>-->
+<!--                <li><a href="#">Contact</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="col-sm-2">-->
+<!--            <h5>Social</h5>-->
+<!--            <ul class="list-unstyled">-->
+<!--                <li><a href="#">Facebook</a></li>-->
+<!--                <li><a href="#">Twitter</a></li>-->
+<!--                <li><a href="#">Blog</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="col-sm-2">-->
+<!--            <h5>Support</h5>-->
+<!--            <ul class="list-unstyled">-->
+<!--                <li><a href="#">Contact</a></li>-->
+<!--                <li><a href="#">Privacy police</a></li>-->
+<!--                <li><a href="#">Terms & conditions</a></li>-->
+<!--                <li><a href="#">Help desk</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--        <div class="col-sm-4">-->
+<!--            <address>-->
+<!--                <strong>Name, Inc.</strong>-->
+<!--                Address line 1<br>-->
+<!--                Address line 2<br>-->
+<!--                <abbr title="Phone">P:</abbr> (123) 456-7890-->
+<!--            </address>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <script src="js/jquery-3.4.1.js"></script>
 <script src="js/bootstrap.js"></script>
