@@ -1,0 +1,217 @@
+body {
+  /*padding-top: 3.5em;*/
+}
+
+/*row 1*/
+nav .btn-group {
+  margin: 0.8rem 2rem 0 0;
+}
+
+@media(max-width: 48em){
+  nav .btn-group {
+    position: absolute;
+    top: 0;
+    right: 4em;
+  }
+}
+
+/*row 2*/
+section#intro-header .wrap-headline {
+  position: relative;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+section#intro-header h1,
+section#intro-header h2 {
+  color: #FFF;
+}
+
+section#intro-header h2 {
+  font-size: 1.5rem;
+}
+
+section#intro-header hr {
+  width: 10%;
+}
+
+section#intro-header .btn-default {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+#nav-menu {
+  margin-right: 1rem;
+}
+
+/*row3 and row4*/
+section#homepage img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+section#about img {
+  margin-top: 2rem;
+  /*margin-bottom: 5rem;*/
+  /*width:100%;*/
+  /*height:100%;*/
+}
+
+section#about h3 {
+  margin-top: 4rem;
+}
+
+/*row 5 and row 6*/
+section#features {
+  margin-top: 2rem;
+  background-color: #f2f6f5;
+  border-top: 0.1rem solid #e9e9e9;
+  border-bottom: 0.1rem solid #e9e9e9;
+}
+
+section#features * {
+  color: #0f0f0f;
+}
+
+section#features .feature {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+section#features .title {
+  background-color: #c8dad3;
+  padding-bottom: 0.1rem;
+}
+
+
+
+
+section#features .feature-tag {
+  max-width: 107em;
+  display: inline-block;
+  text-align: left;
+  margin-left: 1.5em;
+  font-size: 1.3rem;
+}
+
+/*row 7 and row 8*/
+section#pricing .center-block {
+  width: 90%
+}
+
+section#pricing h3.price-headline {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+section#pricing .white-text {
+  color: #FFF;
+}
+
+section#pricing thead .success {
+  background-color: #78CFBF;
+}
+
+section#pricing thead .info {
+  background-color: #3EC6E0;
+}
+
+section#pricing thead .danger {
+  background-color: #E3536C;
+}
+
+section#pricing tbody .success {
+  background-color: #82DACA;
+}
+
+section#pricing tbody .info {
+  background-color: #53CFE9;
+}
+
+section#pricing tbody .danger {
+  background-color: #EB6379;
+}
+
+/* section 9 - newsletter */
+section#newsletter {
+  border-top: 1px solid #E0E0E0;
+  padding-top: 3.2em;
+  margin-top: 2em;
+}
+
+section#newsletter h4 {
+  padding: 1em;
+}
+
+section#newsletter form {
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 5.5em;
+}
+
+/* footer */
+footer {
+  background-color: #191919;
+  color: #ADADAD;
+  margin-top: 3em;
+}
+
+footer h5,
+footer img {
+  margin-top: 5em;
+  font-weight: bold;
+}
+
+footer address {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  color: #5A5A5A;
+}
+
+footer ul {
+  margin-bottom: 5em;
+}
+
+footer address strong {
+  color: #ADADAD;
+  display: block;
+  padding-bottom: 0.62em;
+}
+
+footer a {
+  font-weight: 300;
+  color: #5A5A5A;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* section team */
+section#team{
+  margin-top: 2rem;
+}
+section#team ul {
+  margin: 5rem 0;
+}
+
+section#team li {
+  margin: 0 5rem;
+}
+
+section#team h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*contact page*/
+section#contact form {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+}
+
+.hidden-element {
+  display: none;
+}
