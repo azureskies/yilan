@@ -106,8 +106,8 @@ section#resume * {
 }
 
 section#resume .resume {
-    padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    /*padding-bottom: 4rem;*/
     text-align: center;
 }
 
@@ -116,14 +116,11 @@ section#resume .title {
     padding-bottom: 0.1rem;
 }
 
-
-section#resume .resume-tag {
-    max-width: 107em;
-    display: inline-block;
-    text-align: left;
-    margin-left: 1.5em;
-    font-size: 1.3rem;
+section#resume img {
+    width:95vw;
+    /*height:100vh;*/
 }
+
 
 /*row 7 and row 8*/
 section#pricing .center-block {
