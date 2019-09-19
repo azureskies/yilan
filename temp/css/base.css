@@ -11,8 +11,8 @@ body {
     font-size: 1.1rem;
 
 }
-z
-/*row 1*/
+
+    /*row 1*/
 nav .btn-group {
     margin: 0.8rem 2rem 0 0;
 }
@@ -22,6 +22,22 @@ nav .btn-group {
         position: absolute;
         top: 0;
         right: 4em;
+    }
+}
+
+.block {
+    position: absolute;
+    border: 1px solid gray;
+    top: 0px;
+    height: 18px;
+    color: yellow;
+    padding: 6px;
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    .ndisplay-in-mobile {
+        display: none;
     }
 }
 
@@ -128,6 +144,7 @@ section#service {
     border-top: 0.1rem solid #e9e9e9;
     border-bottom: 0.1rem solid #e9e9e9;
 }
+
 section#service .title {
     background-color: #FFEE99;
     padding-bottom: 0.1rem;
@@ -143,6 +160,7 @@ section#service img {
 section#service h3 {
     margin-top: 2em;
 }
+
 /*row 7 and row 8*/
 section#pricing .center-block {
     width: 90%
