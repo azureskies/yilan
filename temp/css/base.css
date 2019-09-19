@@ -11,7 +11,7 @@ body {
     font-size: 1.1rem;
 
 }
-
+z
 /*row 1*/
 nav .btn-group {
     margin: 0.8rem 2rem 0 0;
@@ -123,7 +123,26 @@ section#resume img {
     max-height: 100%;
 }
 
+section#service {
+    background-color: #fff8d7;
+    border-top: 0.1rem solid #e9e9e9;
+    border-bottom: 0.1rem solid #e9e9e9;
+}
+section#service .title {
+    background-color: #FFEE99;
+    padding-bottom: 0.1rem;
+}
 
+section#service img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section#service h3 {
+    margin-top: 2em;
+}
 /*row 7 and row 8*/
 section#pricing .center-block {
     width: 90%
