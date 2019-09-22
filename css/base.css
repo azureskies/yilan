@@ -129,7 +129,7 @@ section#resume img {
 }
 section#resume p {
     text-align: center;
-    font-size: 1.2rem;
+    /*font-size: 1.rem;*/
 }
 section#service {
     background-color: #fff8d7;
