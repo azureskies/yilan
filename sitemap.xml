@@ -7,15 +7,9 @@
 
 <url>
   <loc>https://lidayshu.com/index.html</loc>
-  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
+  <lastmod>2019-09-22T15:15:34+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://lidayshu.com/tax/swe-fe.html</loc>
-  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.6</priority>
 </url>
 <url>
   <loc>https://lidayshu.com/index.html</loc>
@@ -24,33 +18,21 @@
   <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://lidayshu.com/tax/swe-fe-1.html</loc>
-  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
+  <loc>https://lidayshu.com/case_sharing_1.html</loc>
+  <lastmod>2019-09-22T15:15:34+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://lidayshu.com/tax/swe-fe-2.html</loc>
-  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
+  <loc>https://lidayshu.com/case_sharing_2.html</loc>
+  <lastmod>2019-09-22T15:15:34+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.8</priority>
 </url>
 <url>
-  <loc>https://lidayshu.com/tax/swe-fe-3.html</loc>
-  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://lidayshu.com/tax/swe-fe-4.html</loc>
-  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
-</url>
-<url>
-  <loc>https://lidayshu.com/tax/swe-fe-5.html</loc>
-  <lastmod>2014-08-02T15:15:34+00:00</lastmod>
-  <changefreq>never</changefreq>
-  <priority>0.5</priority>
+  <loc>https://lidayshu.com/case_sharing_3.html</loc>
+  <lastmod>2019-09-22T15:15:34+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.8</priority>
 </url>
 </urlset>
