@@ -257,6 +257,22 @@
         ga('send', 'pageview');
 
     </script>
+    <script type="text/javascript">
+        $(function () {
+            $("#gotop").click(function () {
+                jQuery("html,body").animate({
+                    scrollTop: 0
+                }, 1000);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#gotop').fadeIn("fast");
+                } else {
+                    $('#gotop').stop().fadeOut("fast");
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 
@@ -935,6 +951,6 @@
         </div>
     </div>
 </footer>
-
+<div id="gotop">↑Top</div>
 </body>
 </html>
