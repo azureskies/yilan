@@ -1,5 +1,5 @@
 * {
-    font-family: 標楷體;
+    font-family: qqtest1;
     font-size: 1.1rem;
 }
 input[readonly]{
@@ -13,7 +13,7 @@ textarea[readonly]{
     src: url("../fonts/HYSuZeLiXingKaiTruingF-2.ttf");
 }
 @font-face {
-    font-family: "標楷體";
+    font-family: "qqtest1";
     src: url("../fonts/kaiu.ttf");
 }
 
