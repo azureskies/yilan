@@ -2,8 +2,12 @@
     font-family: 標楷體;
     font-size: 1.1rem;
 }
-
-@font-face {
+input[readonly]{
+  background-color:rgba(0,0,0,0.1);
+}
+textarea[readonly]{
+  background-color:rgba(0,0,0,0.1);
+}@font-face {
     font-family: "qqtest";
     src: url("../fonts/HYSuZeLiXingKaiTruingF-2.ttf");
 }

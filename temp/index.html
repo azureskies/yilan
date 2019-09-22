@@ -645,23 +645,23 @@
     <div class="container">
         <!--土地增值稅開始-->
         <h3><a id=land class=taxa href="#land" onclick="$('#Form1').slideToggle(500);">土地增值稅</a></h3>
-        <FORM name="landtax" ID="Form1" style="display: none">
-            <table cellspacing="1" cellpadding="2" width="100%" border="1" id="Table2">
+        <FORM class="border" name="landtax" ID="Form1" style="display: none">
+            <table cellspacing="1" cellpadding="2" border="1" id="Table2">
                 <tr>
-                    <td width="37%">
+                    <td>
                         <div align="right">土地公告現值</div>
                     </td>
-                    <td valign="top" width="63%">
-                        <input name="T1" id="Text1" size="20">
+                    <td valign="top">
+                        <input name="T1" id="Text1" size="10">
                         元/每平方公尺
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <div align="right">原規定地價或前次移轉現值</div>
+                        <div align="right">原規定地價或</br>前次移轉現值</div>
                     </td>
                     <td>
-                        <input name="T2" id="Text2" size="20">
+                        <input name="T2" id="Text2" size="10">
                         元/每平方公尺
                     </td>
                 </tr>
@@ -670,7 +670,7 @@
                         <div align="right">消費者物價總指數</div>
                     </td>
                     <td valign="top" width="63%">
-                        <input name="T3" id="Text3">
+                        <input name="T3" id="Text3" size=5>
                         <a style="font-size: 1.1rem; display: inline;"
                            href="http://www.dgbas.gov.tw/public/data/dgbas03/bs3/inquire/cpispleym.xls">(物價指數查詢)</a>
                     </td>
@@ -680,7 +680,7 @@
                         <div align="right">土地面積</div>
                     </td>
                     <td>
-                        <input name="T4" id="Text4" size="20">
+                        <input name="T4" id="Text4" size="10">
                         平方公尺
                     </td>
                 </tr>
@@ -701,11 +701,11 @@
                         <div align="right">移轉或設典範圍</div>
                     </td>
                     <td valign="top" width="63%">分子：
-                        <input name="T6" id="Text5" size="20"></td>
+                        <input name="T6" id="Text5" size="10"></td>
                 </tr>
                 <tr>
                     <td>/分母：
-                        <input name="T5" id="Text6" size="20"></td>
+                        <input name="T5" id="Text6" size="10"></td>
                 </tr>
                 <tr>
                     <th colspan="2">
@@ -718,20 +718,18 @@
                 </tr>
                 <tr>
                     <td valign="top">
-                        <div align="right"><b>一般土地應納稅額：</b></div>
+                        <div align="right"><b>一般土地應納稅額(元)：</b></div>
                     </td>
                     <td valign="top">
-                        <input name="T9" id="Text9" size="20" readonly="readonly">
-                        元
+                        <input readonly class="form-control-plaintext" name="T9" id="Text9">
                     </td>
                 </tr>
                 <tr>
                     <td valign="top" nowrap>
-                        <div align="right"><b>自用住宅土地應納稅額：</b></div>
+                        <div align="right"><b>自用住宅土地</br>應納稅額(元)：</b></div>
                     </td>
                     <td valign="top">
-                        <input name="T10" id="Text10" size="20" readonly="readonly">
-                        元
+                        <input readonly class="form-control-plaintext" name="T10" id="Text10">
                     </td>
                 </tr>
             </table>
@@ -741,43 +739,32 @@
         <!--房屋契稅開始-->
 
         <h3><a id="house1" class=taxa href="#house1" onclick="$('#Form2').slideToggle(500);">房屋契稅</a></h3>
-        <form method=post id=Form2 style="display: none">
-
+        <form class="border" method=post id=Form2 style="display: none">
             <table BORDER=0 CELLSPACING=0 CELLPADDING=0>
-                <caption>
-                    <TBODY></TBODY>
-                </caption>
                 <tr>
                     <td>
                         <table BORDER COLS=2>
                             <tr>
-                                <td><b>契價:</b></td>
-
-                                <td><input name=fa1 onchange=seta1(this) size=10><b>元</b></td>
+                                <td><b>契價(元):</b></td>
+                                <td><input name=fa1 onchange=seta1(this) size="10"></td>
                             </tr>
 
                             <tr>
                                 <td><b>稅率:</b></td>
-
-                                <td><input name=fa2 onchange=seta2(this) size=5><b>%</b>
+                                <td><input name=fa2 onchange=seta2(this) size="10"><b>%</b>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td><b>應繳納契稅:</b></td>
+                                <td><b>應繳納契(元):</b></td>
 
-                                <td><input name=fxa1 size=15 readonly="readonly"><b>元</b></td>
+                                <td><input readonly class="form-control-plaintext" name=fxa1></td>
                             </tr>
                         </table>
-                        <p align="center"><input class="btn btn-primary" onclick=taxing2(this.form) type=button
-                                                 value=開始計算></p>
+                        <p align="center"><input class="btn btn-primary" onclick=taxing2(this.form) type=button value=開始計算></p>
                     </td>
                 </tr>
             </table>
-
-
-            <p></p>
-
 
             <table BORDER>
                 <caption>
@@ -819,12 +806,12 @@
 
         </form>
         <!--房屋貸款開始-->
-        <h3><a id="house2" class=taxa href="#house2" onclick="$('#Form5').slideToggle(500);">房屋貸款</a></h3>
+        <h3 ><a id="house2" class=taxa href="#house2" onclick="$('#Form5').slideToggle(500);">房屋貸款</a></h3>
 
-        <form name=loan ID=Form5 style="display: none">
+        <form class="border" name=loan ID=Form5 style="display: none">
 
 
-            <table BORDER=0 CELLPADDING=2>
+            <table BORDER CELLPADDING=2>
                 <caption>
 
                     <p></p>
@@ -835,25 +822,25 @@
                 <tr>
                     <td><b>貸款金額:</b></td>
 
-                    <td><input maxLength=8 name=i1 size=8><b>萬元</b></td>
+                    <td><input maxLength=8 name=i1 size="10"><b>萬元</b></td>
                 </tr>
 
                 <tr>
                     <td><b>貸款年限:</b></td>
 
-                    <td><input maxLength=8 name=i2 size=8><b>年</b></td>
+                    <td><input maxLength=8 name=i2 size="10"><b>年</b></td>
                 </tr>
 
                 <tr>
                     <td><b>寬 限 期:</b></td>
 
-                    <td><input maxLength=8 name=i3 size=8><b>年</b></td>
+                    <td><input maxLength=8 name=i3 size="10"><b>年</b></td>
                 </tr>
 
                 <tr>
                     <td><b>貸款利率:</b></td>
 
-                    <td><input maxLength=8 name=i4 size=8><b>%</b></td>
+                    <td><input maxLength=8 name=i4 size="10"><b>%</b></td>
                 </tr>
             </table>
 
@@ -861,51 +848,40 @@
             <p align="center"><input class="btn btn-primary" onclick=GetLoan() type=button value="開始計算"></p>
 
 
-            <table BORDER=0 CELLPADDING=2>
-                <caption>
-
-                    </TBODY>
-                </caption>
+            <table BORDER="0" CELLPADDING=2>
 
                 <tr>
-                    <td VALIGN=TOP><b>一、本息平均攤還法</b></td>
+                    <td><b>本息平均攤還法</b>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><b>1.寬限期內月付(元):</b></td>
 
-                    <td VALIGN=TOP><b>1.寬限期內月付:</b></td>
-
-                    <td VALIGN=TOP><input maxLength=8 name=r1 size=8><b>元<i>(<u>只付利息不付本金</u>)</i></b>
+                    <td><input readonly class="form-control-plaintext" maxLength=8 name=r1><i>(<u>只付利息不付本金</u>)</i></b>
                     </td>
                 </tr>
 
                 <tr>
-                    <td><b>　</b></td>
-
-                    <td><b>2.寬限期後月付:</b></td>
-
-                    <td><input maxLength=8 name=r2 size=8><b>元</b></td>
+                    <td><b>2.寬限期後月付(元):</b></td>
+                    <td></br><input readonly class="form-control-plaintext" maxLength=8 name=r2></td>
                 </tr>
 
+
                 <tr>
-                    <td NOWRAP><b>　</b></td>
-
-                    <td><b>　</b></td>
-
-                    <td><b>　</b></td>
+                    <td VALIGN=TOP><b>本金平均攤還法</b></td>
                 </tr>
-
                 <tr>
-                    <td VALIGN=TOP><b>二、本金平均攤還法</b></td>
+                    <td VALIGN=TOP NOWRAP><b>1.寬限期內月付(元):</b></td>
 
-                    <td VALIGN=TOP NOWRAP><b>1.寬限期內月付:</b></td>
-
-                    <td VALIGN=TOP><input maxLength=8 name=r3 size=8><b>元(<i><u>只付利息不付本金</u></i>)</b>
+                    <td VALIGN=TOP><input readonly class="form-control-plaintext" maxLength=8 name=r3>(<i><u>只付利息不付本金</u></i>)</b>
                     </td>
                 </tr>
 
                 <tr>
-                    <td><b>　</b></td>
+                    <td><b>2.寬限期後:&nbsp;</b></td>
 
-                    <td COLSPAN="2" NOWRAP><b>2.寬限期後:&nbsp;</b>
-                        <br><textarea cols=30 name=r4 rows=10></textarea></td>
+                    <td COLSPAN="2" NOWRAP><b></b>
+                        <br><textarea readonly class="form-control-plaintext" cols=30 name=r4 rows=10></textarea></td>
                 </tr>
             </table>
 
