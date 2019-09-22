@@ -72,10 +72,201 @@
             });
         });
     </script>
+
+    <SCRIPT language="JavaScript">
+        function taxing() {
+            var nowvalue, lastvalue, expvalue, area, bb15_2, bb15_3;
+            var nowtotal, oldtotal, addtotal, tax1, tax9, tax8, tax7, tax3;
+            tax3 = eval(document.landtax.sel.value);
+            //window.alert(tax3);
+            nowvalue = eval(document.landtax.T1.value);
+            lastvalue = eval(document.landtax.T2.value);
+            expvalue = eval(document.landtax.T3.value);
+            area = eval(document.landtax.T4.value);
+            bb15_2 = eval(document.landtax.T5.value);
+            bb15_3 = eval(document.landtax.T6.value);
+            oldtotal = lastvalue * area * (bb15_3 / bb15_2) * (expvalue / 100);
+            nowtotal = nowvalue * area * (bb15_3 / bb15_2);
+            addtotal = nowtotal - oldtotal;
+            if (addtotal <= 0) {
+                addtotal = 0;
+                oldtotal = 0
+            }
+            ;
+            tax1 = addtotal * 0.1;
+            switch (tax3) {
+                case 0 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.4 - oldtotal * 0.3
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.3 - oldtotal * 0.1
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
+
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+                case 1 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.36 - oldtotal * 0.24
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.28 - oldtotal * 0.08
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+                case 2 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.34 - oldtotal * 0.21
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.27 - oldtotal * 0.07
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+                case 3 : {
+                    if (addtotal > 2 * oldtotal) {
+                        tax9 = addtotal * 0.32 - oldtotal * 0.18
+                    } else {
+                        if ((oldtotal <= addtotal) && (addtotal <= 2 * oldtotal)) {
+                            tax9 = addtotal * 0.26 - oldtotal * 0.06
+                        } else {
+                            tax9 = addtotal * 0.2
+                        }
+                    }
+                    document.landtax.T9.value = Math.round(tax9);
+
+                }
+                    break;
+            }
+            document.landtax.T10.value = Math.round(tax1);
+        }
+
+        function clearing() {
+            document.landtax.T1.value = "";
+            document.landtax.T2.value = "";
+            document.landtax.T3.value = "";
+            document.landtax.T4.value = "";
+            document.landtax.T5.value = "";
+            document.landtax.T6.value = "";
+            //document.landtax.T7.value="";
+            //document.landtax.T8.value="";
+            document.landtax.T9.value = "";
+            document.landtax.T10.value = "";
+
+        }</SCRIPT>
+    <script language=JavaScript>
+        {
+            var a1, a2, a3
+
+            a1 = ("0");
+            a2 = ("0");
+            a3 = ("0");
+
+            function seta1(t1) {
+                a1 = t1.value;
+            }
+
+            function seta2(t2) {
+                a2 = t2.value;
+            }
+
+
+            function taxing2(form) {
+                var xa1
+                xa1 = (a1 * (a2 / 100));
+                form.fxa1.value = xa1;
+            }
+        }
+    </script>
+    <script language=JavaScript>
+        <!--
+        Script
+        Begin //
+
+        function pv(rate, nper, pmt) {
+            return -(pmt * (Math.pow(1 + rate, nper) - 1) / rate) / Math.pow(1 + rate, nper);
+        }
+
+        function GetECI(cap, yrate, eynper) {
+            return (cap - pv(yrate / 12, eynper * 12, -(cap * (yrate / 12)))) * Math.pow(1 + yrate / 12, eynper * 12);
+        }
+
+        function GetLoan() {
+            var i, j, k;
+            var cap, ynper, eynper, yrate, ncap;
+            with (document.loan) {
+                cap = (i1.value - 0) * 10000;
+                ynper = i2.value - 0;
+                eynper = i3.value - 0;
+                yrate = (i4.value - 0) / 100;
+                r1.value = ((eynper == 0) ? "無寬限期" : Math.round(cap * (yrate / 12)));
+                r2.value = Math.round(cap / pv(yrate / 12, (ynper - eynper) * 12, -1));
+
+                r3.value = r1.value;
+
+                r4.value = "";
+                ncap = GetECI(cap, yrate, eynper);
+                j = 0;
+                for (i = 1; i < (ynper - eynper) * 12; i++) {
+                    if ((i - 1) % 12 == 0)
+                        r4.value += "第" + i + "個月(第" + ((i - 1) / 12 + 1) + "年)付: " + Math.round(cap / ((ynper - eynper) * 12) + (ncap * yrate / 12)) + "元.\n";
+                    ncap -= cap / ((ynper - eynper) * 12);
+                }
+                r4.value += "最後一個月付: " + Math.round(cap / ((ynper - eynper) * 12) + (ncap * yrate / 12)) + "元.\n";
+            }
+        }
+
+        // Script End -->
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $('document').ready(function () {
+            $(parent.document).find('frameSet').attr("cols", "*,0")
+        });
+    </script>
+
+    <link href="layout.css" rel="stylesheet" type="text/css"/>
+
+    <meta property="fb:app_id" content="355040711326416">
+    <meta property="fb:admins" content="100000356677334"/>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53308592-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
     <a class="navbar-brand" href="index.html"><img height="35px" width="300px" src="img/lidayshu.PNG" title="宜蘭地政士事務所"
                                                    alt="宜蘭地政士事務所"/></a>
     <!-- Toggler/collapsibe Button -->
@@ -92,6 +283,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#service" data-toggle="collapse" data-target=".navbar-collapse.show">服務項目</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tax_caculation" data-toggle="collapse" data-target=".navbar-collapse.show">稅費計算</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#related_web" data-toggle="collapse"
@@ -238,7 +432,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">不動產買賣、繼承、贈與登記</h3>
                     <p class="text-dark ">
@@ -255,19 +449,19 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/yilan.jpg">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/farm.jpg">
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">非都市土地變更及更正登記</h3>
                     <p class="text-dark ">
@@ -284,7 +478,7 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">代客辦理民宿申請登記</h3>
                     <p class="text-dark ">
@@ -295,19 +489,19 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/homestay.jpeg">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/agricultural_facility.jpeg">
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">申請農業設施及辦理保存登記</h3>
                     <p class="text-dark ">
@@ -321,7 +515,7 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">遺產稅、贈與稅節稅規劃</h3>
                     <p class="text-dark ">
@@ -332,19 +526,19 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/inherited.jpg">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/consultation.jpeg">
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">法院拍賣不動產專業諮詢</h3>
                     <p class="text-dark ">
@@ -358,7 +552,7 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">辦理銀行貸款及轉貸業務</h3>
                     <p class="text-dark ">
@@ -369,19 +563,19 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/loan.jpeg">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/law.jpg">
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">代撰法律文書</h3>
                     <p class="text-dark ">
@@ -394,7 +588,7 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">辦理銀行二胎房貸</h3>
                     <p class="text-dark ">
@@ -405,19 +599,19 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/secondary_mortgage.jpg">
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 ">
+            <div class="col-md-6 ">
                 <div>
                     <img class="ndisplay-in-mobile" src="img/document.jpg">
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div>
                     <h3 class="text-dark font-weight-bold">代客查詢不動產相關資料</h3>
                     <p class="text-dark ">
@@ -430,6 +624,288 @@
             </div>
 
         </div>
+    </div>
+</section>
+<section id="tax_caculation">
+    <div class="title">
+        <h2 class="text-center text-dark font-weight-bold">稅費計算</h2>
+        <p class="text-center text-dark ">房地稅務與貸款試算(點擊展開計算)</p>
+    </div>
+    <div class="container">
+        <!--土地增值稅開始-->
+        <h3><a id=land class=taxa href="#land" onclick="$('#Form1').slideToggle(500);">土地增值稅</a></h3>
+        <FORM name="landtax" ID="Form1" style="display: none">
+            <table cellspacing="1" cellpadding="2" width="100%" border="1" id="Table2">
+                <tr>
+                    <td width="37%">
+                        <div align="right">土地公告現值</div>
+                    </td>
+                    <td valign="top" width="63%">
+                        <input name="T1" id="Text1" size="20">
+                        元/每平方公尺
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">原規定地價或前次移轉現值</div>
+                    </td>
+                    <td>
+                        <input name="T2" id="Text2" size="20">
+                        元/每平方公尺
+                    </td>
+                </tr>
+                <tr>
+                    <td width="37%" valign="top">
+                        <div align="right">消費者物價總指數</div>
+                    </td>
+                    <td valign="top" width="63%">
+                        <input name="T3" id="Text3">
+                        <a style="font-size: 1.1rem; display: inline;"
+                           href="http://www.dgbas.gov.tw/public/data/dgbas03/bs3/inquire/cpispleym.xls">(物價指數查詢)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">土地面積</div>
+                    </td>
+                    <td>
+                        <input name="T4" id="Text4" size="20">
+                        平方公尺
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="right">持有年限</div>
+                    </td>
+                    <td><select name="sel" id="Select1">
+                        <option selected value="0">20年以下</option>
+                        <option value="1">20年以上</option>
+                        <option value="2">30年以上</option>
+                        <option value="3">40年以上</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <div align="right">移轉或設典範圍</div>
+                    </td>
+                    <td valign="top" width="63%">分子：
+                        <input name="T6" id="Text5" size="20"></td>
+                </tr>
+                <tr>
+                    <td>/分母：
+                        <input name="T5" id="Text6" size="20"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <p align="center">
+                            <input class="btn btn-primary" onFocus="taxing()" type="button" value="增值稅估算" name="B1"
+                                   id="Button1">
+                            <input class="btn btn-primary" onFocus="clearing()" type="button" value="清除資料" name="B2"
+                                   id="Button2">
+                        </p></th>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <div align="right"><b>一般土地應納稅額：</b></div>
+                    </td>
+                    <td valign="top">
+                        <input name="T9" id="Text9" size="20" readonly="readonly">
+                        元
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" nowrap>
+                        <div align="right"><b>自用住宅土地應納稅額：</b></div>
+                    </td>
+                    <td valign="top">
+                        <input name="T10" id="Text10" size="20" readonly="readonly">
+                        元
+                    </td>
+                </tr>
+            </table>
+        </FORM>
+        <!--土地增值稅完畢-->
+
+        <!--房屋契稅開始-->
+
+        <h3><a id="house1" class=taxa href="#house1" onclick="$('#Form2').slideToggle(500);">房屋契稅</a></h3>
+        <form method=post id=Form2 style="display: none">
+
+            <table BORDER=0 CELLSPACING=0 CELLPADDING=0>
+                <caption>
+                    <TBODY></TBODY>
+                </caption>
+                <tr>
+                    <td>
+                        <table BORDER COLS=2>
+                            <tr>
+                                <td><b>契價:</b></td>
+
+                                <td><input name=fa1 onchange=seta1(this) size=10><b>元</b></td>
+                            </tr>
+
+                            <tr>
+                                <td><b>稅率:</b></td>
+
+                                <td><input name=fa2 onchange=seta2(this) size=5><b>%</b>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><b>應繳納契稅:</b></td>
+
+                                <td><input name=fxa1 size=15 readonly="readonly"><b>元</b></td>
+                            </tr>
+                        </table>
+                        <p align="center"><input class="btn btn-primary" onclick=taxing2(this.form) type=button
+                                                 value=開始計算></p>
+                    </td>
+                </tr>
+            </table>
+
+
+            <p></p>
+
+
+            <table BORDER>
+                <caption>
+                    <TBODY></TBODY>
+                </caption>
+
+                <tr ALIGN=CENTER>
+                    <td COLSPAN="6"><b>稅率表</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>買賣契稅</b></td>
+
+                    <td><b>交換契稅</b></td>
+
+                    <td><b>分割契稅</b></td>
+
+                    <td><b>典權契稅</b></td>
+
+                    <td><b>贈與契稅</b></td>
+
+                    <td><b>占有契稅</b></td>
+                </tr>
+
+                <tr ALIGN=CENTER>
+                    <td><b>6%</b></td>
+
+                    <td><b>2%</b></td>
+
+                    <td><b>2%</b></td>
+
+                    <td><b>4%</b></td>
+
+                    <td><b>6%</b></td>
+
+                    <td><b>6%</b></td>
+                </tr>
+            </table>
+
+        </form>
+        <!--房屋貸款開始-->
+        <h3><a id="house2" class=taxa href="#house2" onclick="$('#Form5').slideToggle(500);">房屋貸款</a></h3>
+
+        <form name=loan ID=Form5 style="display: none">
+
+
+            <table BORDER=0 CELLPADDING=2>
+                <caption>
+
+                    <p></p>
+                    <TBODY></TBODY>
+
+                </caption>
+
+                <tr>
+                    <td><b>貸款金額:</b></td>
+
+                    <td><input maxLength=8 name=i1 size=8><b>萬元</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>貸款年限:</b></td>
+
+                    <td><input maxLength=8 name=i2 size=8><b>年</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>寬 限 期:</b></td>
+
+                    <td><input maxLength=8 name=i3 size=8><b>年</b></td>
+                </tr>
+
+                <tr>
+                    <td><b>貸款利率:</b></td>
+
+                    <td><input maxLength=8 name=i4 size=8><b>%</b></td>
+                </tr>
+            </table>
+
+
+            <p align="center"><input class="btn btn-primary" onclick=GetLoan() type=button value="開始計算"></p>
+
+
+            <table BORDER=0 CELLPADDING=2>
+                <caption>
+
+                    </TBODY>
+                </caption>
+
+                <tr>
+                    <td VALIGN=TOP><b>一、本息平均攤還法</b></td>
+
+                    <td VALIGN=TOP><b>1.寬限期內月付:</b></td>
+
+                    <td VALIGN=TOP><input maxLength=8 name=r1 size=8><b>元<i>(<u>只付利息不付本金</u>)</i></b>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>　</b></td>
+
+                    <td><b>2.寬限期後月付:</b></td>
+
+                    <td><input maxLength=8 name=r2 size=8><b>元</b></td>
+                </tr>
+
+                <tr>
+                    <td NOWRAP><b>　</b></td>
+
+                    <td><b>　</b></td>
+
+                    <td><b>　</b></td>
+                </tr>
+
+                <tr>
+                    <td VALIGN=TOP><b>二、本金平均攤還法</b></td>
+
+                    <td VALIGN=TOP NOWRAP><b>1.寬限期內月付:</b></td>
+
+                    <td VALIGN=TOP><input maxLength=8 name=r3 size=8><b>元(<i><u>只付利息不付本金</u></i>)</b>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><b>　</b></td>
+
+                    <td COLSPAN="2" NOWRAP><b>2.寬限期後:&nbsp;</b>
+                        <br><textarea cols=30 name=r4 rows=10></textarea></td>
+                </tr>
+            </table>
+
+        </form>
+        <h3><a class=taxa href="http://www.etax.nat.gov.tw/etwmain/front/ETW158W6" target="_blank">遺產稅</a></h3>
+        <h4>【財務部稅務入口網】</h4>
+
+        <h3><a class=taxa href="http://www.etax.nat.gov.tw/etwmain/front/ETW158W7" target="_blank">贈與稅</a></h3>
+        <h4>【財務部稅務入口網】</h4>
+        <h3><a href="tax/swe-fe.html" target="_blank" id=oldtax>舊版稅費計算</a></h3>
+        <h4>【方便影印與加入書籤】</h4>
     </div>
 </section>
 <section id="related_web">
