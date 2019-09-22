@@ -194,10 +194,6 @@
         }
     </script>
     <script language=JavaScript>
-        <!--
-        Script
-        Begin //
-
         function pv(rate, nper, pmt) {
             return -(pmt * (Math.pow(1 + rate, nper) - 1) / rate) / Math.pow(1 + rate, nper);
         }
@@ -241,8 +237,6 @@
             $(parent.document).find('frameSet').attr("cols", "*,0")
         });
     </script>
-
-    <link href="layout.css" rel="stylesheet" type="text/css"/>
 
     <meta property="fb:app_id" content="355040711326416">
     <meta property="fb:admins" content="100000356677334"/>
@@ -653,7 +647,7 @@
                         <div align="right">土地公告現值</div>
                     </td>
                     <td valign="top">
-                        <input name="T1" id="Text1" size="10">
+                        <input name="T1" id="Text1" size="10" type="number">
                         元/每平方公尺
                     </td>
                 </tr>
@@ -662,7 +656,7 @@
                         <div align="right">原規定地價或</br>前次移轉現值</div>
                     </td>
                     <td>
-                        <input name="T2" id="Text2" size="10">
+                        <input name="T2" id="Text2" size="10" type="number">
                         元/每平方公尺
                     </td>
                 </tr>
@@ -671,7 +665,7 @@
                         <div align="right">消費者物價總指數</div>
                     </td>
                     <td valign="top" width="63%">
-                        <input name="T3" id="Text3" size=5>
+                        <input name="T3" id="Text3" size=5 type="number">
                         <a style="font-size: 1.1rem; display: inline;"
                            href="http://www.dgbas.gov.tw/public/data/dgbas03/bs3/inquire/cpispleym.xls">(物價指數查詢)</a>
                     </td>
@@ -681,7 +675,7 @@
                         <div align="right">土地面積</div>
                     </td>
                     <td>
-                        <input name="T4" id="Text4" size="10">
+                        <input name="T4" id="Text4" size="10" type="number">
                         平方公尺
                     </td>
                 </tr>
@@ -702,11 +696,11 @@
                         <div align="right">移轉或設典範圍</div>
                     </td>
                     <td valign="top" width="63%">分子：
-                        <input name="T6" id="Text5" size="10"></td>
+                        <input name="T6" id="Text5" size="10" type="number"></td>
                 </tr>
                 <tr>
                     <td>/分母：
-                        <input name="T5" id="Text6" size="10"></td>
+                        <input name="T5" id="Text6" size="10" type="number"></td>
                 </tr>
                 <tr>
                     <th colspan="2">
@@ -747,12 +741,12 @@
                         <table BORDER COLS=2>
                             <tr>
                                 <td><b>契價(元):</b></td>
-                                <td><input name=fa1 onchange=seta1(this) size="10"></td>
+                                <td><input name=fa1 onchange=seta1(this) size="10" type="number"></td>
                             </tr>
 
                             <tr>
                                 <td><b>稅率:</b></td>
-                                <td><input name=fa2 onchange=seta2(this) size="10"><b>%</b>
+                                <td><input name=fa2 onchange=seta2(this) size="10" type="number"><b>%</b>
                                 </td>
                             </tr>
 
@@ -817,25 +811,25 @@
                 <tr>
                     <td><b>貸款金額:</b></td>
 
-                    <td><input maxLength=8 name=i1 size="10"><b>萬元</b></td>
+                    <td><input maxLength=8 name=i1 size="10" type="number"><b>萬元</b></td>
                 </tr>
 
                 <tr>
                     <td><b>貸款年限:</b></td>
 
-                    <td><input maxLength=8 name=i2 size="10"><b>年</b></td>
+                    <td><input maxLength=8 name=i2 size="10" type="number"><b>年</b></td>
                 </tr>
 
                 <tr>
                     <td><b>寬 限 期:</b></td>
 
-                    <td><input maxLength=8 name=i3 size="10"><b>年</b></td>
+                    <td><input maxLength=8 name=i3 size="10" type="number"><b>年</b></td>
                 </tr>
 
                 <tr>
                     <td><b>貸款利率:</b></td>
 
-                    <td><input maxLength=8 name=i4 size="10"><b>%</b></td>
+                    <td><input maxLength=8 name=i4 size="10" type="number"><b>%</b></td>
                 </tr>
             </table>
 
@@ -876,7 +870,7 @@
                                           name=r3>(<i><u>只付利息不付本金</u></i>)</b></td>
                 </tr>
                 <tr>
-                    <td><b>2.寬限期後:</td>
+                    <td><b>2.寬限期後:</b></td>
                 </tr>
                 <tr>
                     <td COLSPAN="2" NOWRAP>
