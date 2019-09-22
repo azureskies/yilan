@@ -761,7 +761,8 @@
                                 <td><input readonly class="form-control-plaintext" name=fxa1></td>
                             </tr>
                         </table>
-                        <p align="center"><input class="btn btn-primary" onclick=taxing2(this.form) type=button value=開始計算></p>
+                        <p align="center"><input class="btn btn-primary" onclick=taxing2(this.form) type=button
+                                                 value=開始計算></p>
                     </td>
                 </tr>
             </table>
@@ -806,19 +807,12 @@
 
         </form>
         <!--房屋貸款開始-->
-        <h3 ><a id="house2" class=taxa href="#house2" onclick="$('#Form5').slideToggle(500);">房屋貸款</a></h3>
+        <h3><a id="house2" class=taxa href="#house2" onclick="$('#Form5').slideToggle(500);">房屋貸款</a></h3>
 
         <form class="border" name=loan ID=Form5 style="display: none">
 
 
-            <table BORDER CELLPADDING=2>
-                <caption>
-
-                    <p></p>
-                    <TBODY></TBODY>
-
-                </caption>
-
+            <table BORDER CELLPADDING=1>
                 <tr>
                     <td><b>貸款金額:</b></td>
 
@@ -848,39 +842,43 @@
             <p align="center"><input class="btn btn-primary" onclick=GetLoan() type=button value="開始計算"></p>
 
 
-            <table BORDER="0" CELLPADDING=2>
+            <table BORDER="0" CELLPADDING=1>
 
                 <tr>
-                    <td><b>本息平均攤還法</b>
+                    <td><b class="text-danger">本息平均攤還法</b>
                     <td></td>
                 </tr>
                 <tr>
                     <td><b>1.寬限期內月付(元):</b></td>
 
+                </tr>
+                <tr>
                     <td><input readonly class="form-control-plaintext" maxLength=8 name=r1><i>(<u>只付利息不付本金</u>)</i></b>
                     </td>
                 </tr>
 
                 <tr>
                     <td><b>2.寬限期後月付(元):</b></td>
-                    <td></br><input readonly class="form-control-plaintext" maxLength=8 name=r2></td>
+                </tr>
+                <tr>
+                    <td><input readonly class="form-control-plaintext" maxLength=8 name=r2></td>
                 </tr>
 
-
                 <tr>
-                    <td VALIGN=TOP><b>本金平均攤還法</b></td>
+                    <td VALIGN=TOP></br><b class="text-danger">本金平均攤還法</b></td>
                 </tr>
                 <tr>
                     <td VALIGN=TOP NOWRAP><b>1.寬限期內月付(元):</b></td>
-
-                    <td VALIGN=TOP><input readonly class="form-control-plaintext" maxLength=8 name=r3>(<i><u>只付利息不付本金</u></i>)</b>
-                    </td>
                 </tr>
-
                 <tr>
-                    <td><b>2.寬限期後:&nbsp;</b></td>
-
-                    <td COLSPAN="2" NOWRAP><b></b>
+                    <td VALIGN=TOP><input readonly class="form-control-plaintext" maxLength=8
+                                          name=r3>(<i><u>只付利息不付本金</u></i>)</b></td>
+                </tr>
+                <tr>
+                    <td><b>2.寬限期後:</td>
+                </tr>
+                <tr>
+                    <td COLSPAN="2" NOWRAP>
                         <br><textarea readonly class="form-control-plaintext" cols=30 name=r4 rows=10></textarea></td>
                 </tr>
             </table>
