@@ -195,6 +195,15 @@ section#tax_caculation p {
 
 section#tax_caculation h4 {
     text-align: center;
+    margin-top: 0.8em;
+}
+
+section#tax_caculation img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+
 }
 
 section#tax_caculation table {
