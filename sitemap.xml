@@ -1,56 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <url>
-        <loc>https://lidayshu.com/index.html</loc>
-        <lastmod>2019-09-22T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://lidayshu.com/index.html</loc>
-        <lastmod>2014-08-02T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lidayshu.com/case_sharing_1.html</loc>
-        <lastmod>2019-09-22T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lidayshu.com/case_sharing_2.html</loc>
-        <lastmod>2019-09-22T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lidayshu.com/case_sharing_3.html</loc>
-        <lastmod>2019-09-22T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lidayshu.com/case_sharing_4.html</loc>
-        <lastmod>2019-09-22T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lidayshu.com/case_sharing_5.html</loc>
-        <lastmod>2019-09-22T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lidayshu.com/case_sharing_6.html</loc>
-        <lastmod>2019-09-22T15:15:34+00:00</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.8</priority>
-    </url>
+-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+
+-<url>
+
+<loc>https://lidayshu.com/</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>1.00</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/index.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
++<url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/case_sharing_3.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/case_sharing_7.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/case_sharing_1.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/case_sharing_4.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/case_sharing_8.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/case_sharing_5.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://lidayshu.com/case_sharing_6.html</loc>
+
+<lastmod>2021-09-02T12:33:07+00:00</lastmod>
+
+<priority>0.80</priority>
+
+</url>
+
 </urlset>
