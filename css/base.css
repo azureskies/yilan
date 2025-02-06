@@ -1,5 +1,5 @@
 * {
-    font-family: qqtest1;
+    font-family: "Microsoft JhengHei", sans-serif;
     font-size: 1.1rem;
 }
 
@@ -10,7 +10,7 @@ input[readonly] {
 textarea[readonly] {
     background-color: rgba(0, 0, 0, 0.1);
 }
-
+/*
 @font-face {
     font-family: "qqtest";
     src: url("../fonts/HYSuZeLiXingKaiTruingF-2.ttf");
@@ -20,7 +20,7 @@ textarea[readonly] {
     font-family: "qqtest1";
     src: url("../fonts/kaiu.ttf");
 }
-
+*/
 @media (max-width: 760px) {
     .ndisplay-in-mobile {
         display: none;
