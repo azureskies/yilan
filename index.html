@@ -348,6 +348,16 @@
         display: inline;
       }
     }
+    
+    /* FAQ 箭頭動畫效果 */
+    .btn[aria-expanded="true"] .fas {
+      transform: rotate(90deg);
+      transition: transform 0.3s ease;
+    }
+    .btn[aria-expanded="false"] .fas {
+      transform: rotate(0deg);
+      transition: transform 0.3s ease;
+    }
     </style>
 
     <!-- AOS Animate On Scroll CSS -->
@@ -381,7 +391,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#online_consultation" data-toggle="collapse"
-                   data-target=".navbar-collapse.show">線上諮詢</a>
+                   data-target=".navbar-collapse.show">常見問題</a>
             </li>
         </ul>
     </div>
@@ -689,6 +699,9 @@
         </div>
     </div>
 </section>
+
+
+
 <section id="tax_caculation" data-aos="fade-up">
     <div class="title">
         <h2 class="text-center text-dark font-weight-bold">稅費計算</h2>
@@ -886,27 +899,110 @@
         <p><a href="https://lvr.land.moi.gov.tw/" target="_parent">不動產交易價格查詢服務網</a></p>
     </div>
 </section>
-<script>(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=355040711326416&version=v2.0";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-
-
-</script>
+<!-- FAQ 手風琴區塊 -->
 <section id="online_consultation" data-aos="fade-up">
-    <div class="title">
-        <h2 class="text-center text-dark font-weight-bold">線上諮詢</h2>
-        <p class="text-center text-dark ">聯絡完畢將刪除留言，請放心詢問</p>
+  <div class="container">
+    <h2 class="text-center text-dark font-weight-bold mb-4">常見問題 FAQ</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="mb-3">
+        <div class="border-bottom pb-2" id="faq1">
+          <h4 class="mb-0">
+            <button class="btn btn-link text-left p-0 text-dark font-weight-bold" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1" style="text-decoration:none;">
+              <i class="fas fa-chevron-down mr-2"></i>什麼是不動產買賣過戶？
+            </button>
+          </h4>
+        </div>
+        <div id="collapse1" class="collapse show" aria-labelledby="faq1" data-parent="#faqAccordion">
+          <div class="pt-3 pb-2">
+            買賣過戶涉及複雜的法律程序，包括契約審查、稅費計算、產權調查等多項專業作業。一個環節疏忽就可能影響交易安全，建議委託專業地政士辦理。
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="border-bottom pb-2" id="faq2">
+          <h4 class="mb-0">
+            <button class="btn btn-link text-left p-0 text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="text-decoration:none;">
+              <i class="fas fa-chevron-right mr-2"></i>繼承登記要準備什麼？
+            </button>
+          </h4>
+        </div>
+        <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+          <div class="pt-3 pb-2">
+            需要死亡證明、戶籍謄本、遺產清冊等十多種文件，還要處理遺產稅申報。文件缺漏或填寫錯誤都會被退件，程序繁瑣且耗時。
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="border-bottom pb-2" id="faq3">
+          <h4 class="mb-0">
+            <button class="btn btn-link text-left p-0 text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3" style="text-decoration:none;">
+              <i class="fas fa-chevron-right mr-2"></i>農地可以蓋房子嗎？
+            </button>
+          </h4>
+        </div>
+        <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+          <div class="pt-3 pb-2">
+            農地建築法規極為嚴格，需符合農舍興建條件或申請農業設施使用。法規條文多達數百條且經常修正，違法使用將面臨拆除及罰款風險。
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="border-bottom pb-2" id="faq4">
+          <h4 class="mb-0">
+            <button class="btn btn-link text-left p-0 text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4" style="text-decoration:none;">
+              <i class="fas fa-chevron-right mr-2"></i>贈與房產要繳多少稅？
+            </button>
+          </h4>
+        </div>
+        <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+          <div class="pt-3 pb-2">
+            稅額計算涉及房屋評定價值、土地公告現值、免稅額度等複雜因素。時機選擇和方式規劃不當，可能多繳數十萬甚至百萬稅金。
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container">
-        <div class="fb-comments" data-href="https://lidayshu.com/index.html" data-width="980" data-numposts="6"
-             data-colorscheme="light"></div>
-    </div>
+    <!-- FAQ Schema 結構化資料 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "什麼是不動產買賣過戶？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "買賣過戶涉及複雜的法律程序，包括契約審查、稅費計算、產權調查等多項專業作業。一個環節疏忽就可能影響交易安全，建議委託專業地政士辦理。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "繼承登記要準備什麼？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "需要死亡證明、戶籍謄本、遺產清冊等十多種文件，還要處理遺產稅申報。文件缺漏或填寫錯誤都會被退件，程序繁瑣且耗時。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "農地可以蓋房子嗎？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "農地建築法規極為嚴格，需符合農舍興建條件或申請農業設施使用。法規條文多達數百條且經常修正，違法使用將面臨拆除及罰款風險。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "贈與房產要繳多少稅？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "稅額計算涉及房屋評定價值、土地公告現值、免稅額度等複雜因素。時機選擇和方式規劃不當，可能多繳數十萬甚至百萬稅金。"
+          }
+        }
+      ]
+    }
+    </script>
+  </div>
 </section>
 
 <footer>
