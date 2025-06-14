@@ -273,23 +273,6 @@ section#faq h3 {
     font-size: 1rem;
 }
 
-/* FAQ 手風琴樣式調整 - 減少文字離頂端距離 */
-#faqAccordion .card-header {
-    padding: 0.5rem 1.25rem !important;
-}
-
-#faqAccordion .card-header h3 {
-    margin-bottom: 0 !important;
-    line-height: 1.2;
-}
-
-#faqAccordion .btn-link {
-    padding: 0 !important;
-    text-align: left;
-    width: 100%;
-    line-height: 1.2;
-}
-
 /* footer */
 footer {
     background-color: #444444;
