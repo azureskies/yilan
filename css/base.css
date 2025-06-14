@@ -270,8 +270,9 @@ section#faq .title {
 }
 
 section#faq h3 {
-    margin-top: 2em;
+    font-size: 1rem;
 }
+
 
 /* footer */
 footer {
