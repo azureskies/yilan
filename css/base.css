@@ -258,18 +258,18 @@ section#related_web a:hover {
     color: #0CC;
 }
 
-section#online_consultation {
+section#faq {
     background-color: #fbfbff;
     border-top: 0.1rem solid #e9e9e9;
     border-bottom: 0.1rem solid #e9e9e9;
 }
 
-section#online_consultation .title {
+section#faq .title {
     background-color: #d2e9ff;
     padding-bottom: 0.1rem;
 }
 
-section#online_consultation h3 {
+section#faq h3 {
     margin-top: 2em;
 }
 
