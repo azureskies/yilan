@@ -1,0 +1,6 @@
+.playwright-mcp/
+venv/
+__pycache__/
+*.pyc
+generate_case_pages.py
+.DS_Store

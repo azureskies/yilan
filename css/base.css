@@ -1,3 +1,17 @@
+/* === CSS Variables === */
+:root {
+    --primary: #1a3a5c;
+    --primary-light: #e8edf2;
+    --secondary: #c8a45c;
+    --secondary-light: #f5f0e3;
+    --accent: #b20000;
+    --text-dark: #2c2c2c;
+    --text-muted: #6c757d;
+    --bg-white: #ffffff;
+    --bg-light: #f8f9fa;
+    --border-color: #e9e9e9;
+}
+
 * {
     font-family: "Microsoft JhengHei", sans-serif;
     font-size: 1.1rem;
@@ -10,41 +24,125 @@ input[readonly] {
 textarea[readonly] {
     background-color: rgba(0, 0, 0, 0.1);
 }
-/*
-@font-face {
-    font-family: "qqtest";
-    src: url("../fonts/HYSuZeLiXingKaiTruingF-2.ttf");
+
+/* === Hero Section === */
+.hero-section {
+    position: relative;
+    background-image: url('../img/homepage_b.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@font-face {
-    font-family: "qqtest1";
-    src: url("../fonts/kaiu.ttf");
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 58, 92, 0.65);
 }
-*/
-@media (max-width: 760px) {
-    .ndisplay-in-mobile {
-        display: none;
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero-content .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.hero-content .btn-hero {
+    margin: 0.3rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+}
+
+.btn-hero-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.btn-hero-primary:hover {
+    background-color: #8a0000;
+    border-color: #8a0000;
+    color: #fff;
+}
+
+.btn-hero-outline {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-hero-outline:hover {
+    background-color: #fff;
+    color: var(--primary);
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 300px;
+    }
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    .hero-content .hero-subtitle {
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 760px) {
-    section#service h3 {
-        margin-top: 2rem;
-    }
+/* === Navbar === */
+.navbar {
+    border-bottom: 2px solid var(--primary);
 }
 
-@media (min-width: 760px) and (max-width: 992px) {
-    section#service img {
-        margin-top: 2rem;
-    }
+.navbar .nav-link {
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
 }
 
-@media (min-width: 992px) {
-    section#service h3 {
-        margin-top: 2rem;
-    }
+.navbar .nav-link:hover {
+    color: var(--accent);
 }
 
+/* === Section Title === */
+.section-title {
+    background-color: var(--primary-light);
+    padding: 1rem 0 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title h2 {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.section-title p {
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* === Google Map === */
 .map-container-6 {
     overflow: hidden;
     padding-bottom: 56.25%;
@@ -60,21 +158,10 @@ textarea[readonly] {
     position: absolute;
 }
 
-section#reservation p {
-    margin-bottom: 0;
-}
-
-/*row3 and row4*/
-section#homepage img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-/* section team */
+/* === About Me Section === */
 section#aboutme {
     margin-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 section#aboutme ul {
@@ -87,46 +174,44 @@ section#aboutme li {
 
 section#aboutme h1 {
     font-size: 2.0rem;
-    /*font-weight: bold;*/
-    font-family: qqtest;
 }
 
 section#aboutme img {
-    /*margin-top: 2rem;*/
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    /*margin-bottom: 5rem;*/
-    /*width:100%;*/
-    /*height:100%;*/
 }
 
 section#aboutme h3 {
     margin-top: 4rem;
 }
 
-/*row 5 and row 6*/
+/* === Resume Section === */
 section#resume {
-    margin-top: 2rem;
-    background-color: #fcfcfc;
-    border-top: 0.1rem solid #e9e9e9;
-    border-bottom: 0.1rem solid #e9e9e9;
+    margin-top: 0;
+    background-color: var(--bg-light);
+    border-top: 0.1rem solid var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
+    padding-bottom: 2rem;
 }
 
 section#resume * {
-    color: #0f0f0f;
+    color: var(--text-dark);
 }
 
 section#resume .resume {
     padding-top: 1rem;
-    /*padding-bottom: 4rem;*/
     text-align: center;
 }
 
 section#resume .title {
-    background-color: #f0f0f0;
+    background-color: var(--primary-light);
     padding-bottom: 0.1rem;
+}
+
+section#resume .title h2 {
+    color: var(--primary);
 }
 
 section#resume img {
@@ -138,93 +223,325 @@ section#resume img {
 
 section#resume p {
     text-align: center;
-    /*font-size: 1.rem;*/
 }
 
+/* === Service Section (Card Grid) === */
 section#service {
-    background-color: #fff8d7;
-    border-top: 0.1rem solid #e9e9e9;
-    border-bottom: 0.1rem solid #e9e9e9;
+    background-color: var(--bg-white);
+    border-top: 0.1rem solid var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
+    padding-bottom: 2rem;
 }
 
 section#service .title {
-    background-color: #FFEE99;
+    background-color: var(--primary-light);
     padding-bottom: 0.1rem;
 }
 
-section#service img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
+section#service .title h2 {
+    color: var(--primary);
 }
 
-section#service h3 {
-    /*margin-top: 2rem;*/
+.service-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 100%;
+    background: var(--bg-white);
+    transition: box-shadow 0.3s, transform 0.2s;
 }
 
+.service-card:hover {
+    box-shadow: 0 4px 16px rgba(26, 58, 92, 0.12);
+    transform: translateY(-2px);
+}
+
+.service-card .service-icon {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+
+.service-card h5 {
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.6rem;
+    font-size: 1.15rem;
+}
+
+.service-card .service-brief {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.service-card .service-detail {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+}
+
+.service-card .case-links {
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px dashed var(--border-color);
+}
+
+.service-card .case-links-label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.4rem;
+}
+
+.service-card .case-tag {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary);
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin: 0.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid var(--primary);
+    transition: background 0.2s, color 0.2s;
+}
+
+.service-card .case-tag:hover {
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+}
+
+.service-card .service-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.service-card .btn-toggle-detail {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.service-card .btn-toggle-detail:hover {
+    background: var(--primary-light);
+    text-decoration: none;
+}
+
+.service-card .btn-toggle-detail .fa-chevron-down {
+    transition: transform 0.3s;
+    font-size: 0.75rem;
+    margin-left: 0.2rem;
+}
+
+.service-card .btn-toggle-detail:not(.collapsed) .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.service-card .btn-consult {
+    color: #fff;
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.service-card .btn-consult:hover {
+    opacity: 0.85;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* === Featured Cases Section === */
+section#featured-cases {
+    background-color: var(--bg-light);
+    border-top: 0.1rem solid var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
+    padding-bottom: 2rem;
+}
+
+.case-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 100%;
+    background: var(--bg-white);
+    transition: box-shadow 0.3s;
+}
+
+.case-card:hover {
+    box-shadow: 0 4px 16px rgba(26, 58, 92, 0.12);
+}
+
+.case-card .case-category {
+    display: inline-block;
+    background-color: var(--primary-light);
+    color: var(--primary);
+    font-size: 0.8rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.case-card h5 {
+    font-weight: bold;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+}
+
+.case-card h5 a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+.case-card h5 a:hover {
+    color: var(--accent);
+}
+
+.case-card .case-excerpt {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* === Tax Calculator Section === */
 section#tax_caculation {
-    background-color: #fffaf4;
-    border-top: 0.1rem solid #e9e9e9;
-    border-bottom: 0.1rem solid #e9e9e9;
+    background-color: var(--bg-white);
+    border-top: 0.1rem solid var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
+    padding-bottom: 2rem;
 }
 
 section#tax_caculation .title {
-    background-color: #ffc78e;
+    background-color: var(--primary-light);
     padding-bottom: 0.1rem;
 }
 
-section#tax_caculation a:hover {
-    color: #0CC;
+section#tax_caculation .title h2 {
+    color: var(--primary);
 }
 
-section#tax_caculation a {
+section#tax_caculation .tax-toggle {
     display: block;
     text-align: center;
-    font-size: 30px;
-    color: #06C;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary);
     text-decoration: none;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    background-color: var(--bg-light);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
 
-    /*margin-top:30px;*/
-    /*width:490px;*/
+section#tax_caculation .tax-toggle:hover {
+    background-color: var(--primary-light);
+    color: var(--primary);
+}
+
+section#tax_caculation .tax-form {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section#tax_caculation .form-group label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+section#tax_caculation .form-control {
+    border-radius: 4px;
+}
+
+section#tax_caculation .result-box {
+    background-color: var(--secondary-light);
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+section#tax_caculation .result-box label {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+section#tax_caculation .result-box .form-control-plaintext {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+section#tax_caculation h4 {
+    text-align: center;
+    margin-top: 1.5em;
+    color: var(--primary);
+}
+
+section#tax_caculation .tax-rate-table {
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+section#tax_caculation .tax-rate-table th {
+    background-color: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+section#tax_caculation .tax-rate-table td {
+    text-align: center;
+    padding: 0.4rem 0.8rem;
+    font-weight: bold;
 }
 
 section#tax_caculation p {
     text-align: center;
 }
 
-section#tax_caculation h4 {
-    text-align: center;
-    margin-top: 0.8em;
-}
-
 section#tax_caculation img.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /*width: 40%;*/
-
-}
-
-section#tax_caculation table {
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-section#tax_caculation input {
-    margin-left: auto;
-    margin-right: auto;
-}
-
+/* === Related Web Section === */
 section#related_web {
-    background-color: #f0fff0;
-    border-top: 0.1rem solid #e9e9e9;
-    border-bottom: 0.1rem solid #e9e9e9;
+    background-color: var(--bg-light);
+    border-top: 0.1rem solid var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
+    padding-bottom: 1.5rem;
 }
 
 section#related_web .title {
-    background-color: #dfffdf;
+    background-color: var(--primary-light);
     padding-bottom: 0.1rem;
+}
+
+section#related_web .title h2 {
+    color: var(--primary);
 }
 
 section#related_web img {
@@ -245,45 +562,105 @@ section#related_web p {
 section#related_web a {
     display: block;
     text-align: center;
-    font-size: 30px;
-    color: #06C;
+    font-size: 1.2rem;
+    color: var(--primary);
     text-decoration: none;
-
-    /*margin-top:30px;*/
-    /*width:490px;*/
-
+    padding: 0.3rem 0;
 }
 
 section#related_web a:hover {
-    color: #0CC;
+    color: var(--accent);
 }
 
+/* === FAQ Section === */
 section#faq {
-    background-color: #fbfbff;
-    border-top: 0.1rem solid #e9e9e9;
-    border-bottom: 0.1rem solid #e9e9e9;
+    background-color: var(--bg-white);
+    border-top: 0.1rem solid var(--border-color);
+    border-bottom: 0.1rem solid var(--border-color);
+    padding-bottom: 2rem;
 }
 
 section#faq .title {
-    background-color: #d2e9ff;
+    background-color: var(--primary-light);
     padding-bottom: 0.1rem;
+}
+
+section#faq .title h2 {
+    color: var(--primary);
 }
 
 section#faq h3 {
     font-size: 1rem;
 }
 
-/* footer */
+section#faq .card-header {
+    background-color: var(--bg-light);
+}
+
+section#faq .btn-link {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+section#faq .btn-link:hover {
+    color: var(--accent);
+}
+
+/* === Footer === */
 footer {
-    background-color: #444444;
-    color: #FFFFFF;
-    /*margin-top: 1em;*/
+    background-color: var(--primary);
+    color: #fff;
+    padding: 2.5rem 0 1.5rem;
+}
+
+footer * {
+    color: #fff;
 }
 
 footer p {
-    margin-bottom: 0;
+    margin-bottom: 0.3rem;
 }
 
+footer h5 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--secondary);
+}
+
+footer .footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+}
+
+footer .social-link {
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+
+footer .social-link img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+footer .social-link:hover img {
+    opacity: 1;
+}
+
+/* === Go to Top === */
 #gotop .btn:focus {
     box-shadow: none;
 }
@@ -295,12 +672,26 @@ footer p {
     bottom: 20px;
     padding: 10px 15px;
     font-size: 20px;
-    background: rgba(60%, 60%, 60%, 0.5);
+    background: rgba(26, 58, 92, 0.6);
     color: white;
     cursor: pointer;
     border-radius: 50px;
 }
 
+/* === Utility === */
 .hidden-element {
     display: none;
+}
+
+@media (max-width: 576px) {
+    .mobile-break {
+        display: block;
+        height: 6px;
+    }
+}
+
+@media (min-width: 577px) {
+    .mobile-break {
+        display: inline;
+    }
 }
