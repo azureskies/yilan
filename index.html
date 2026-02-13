@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
     <meta name="google-site-verification" content="3bVyGr99IYsb3OWGTGqSCW1SxLXJWAHa7DEqwePvcyU"/>
     <meta name="msvalidate.01" content="4D3F6AEBC8A074C7B3ADDA2C92B6FD92"/>
@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="img/homepage.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="canonical" href="https://lidayshu.com/">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -27,7 +28,6 @@
     <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
     <!--    <script src="js/jquery.sticky-nav.js"></script>-->
 
     <!-- Open Graph 標籤 -->
@@ -67,7 +67,7 @@
                     event.preventDefault();
 
                     var fixedTop = $('.navbar');
-                    offset = fixedTop.outerHeight();
+                    var offset = fixedTop.outerHeight();
                     // Store hash
                     var hash = this.hash
                     // Using jQuery's animate() method to add smooth page scroll
@@ -93,14 +93,14 @@
         function taxing() {
             var nowvalue, lastvalue, expvalue, area, bb15_2, bb15_3;
             var nowtotal, oldtotal, addtotal, tax1, tax9, tax8, tax7, tax3;
-            tax3 = eval(document.landtax.sel.value);
+            tax3 = parseFloat(document.landtax.sel.value) || 0;
             //window.alert(tax3);
-            nowvalue = eval(document.landtax.T1.value);
-            lastvalue = eval(document.landtax.T2.value);
-            expvalue = eval(document.landtax.T3.value);
-            area = eval(document.landtax.T4.value);
-            bb15_2 = eval(document.landtax.T5.value);
-            bb15_3 = eval(document.landtax.T6.value);
+            nowvalue = parseFloat(document.landtax.T1.value) || 0;
+            lastvalue = parseFloat(document.landtax.T2.value) || 0;
+            expvalue = parseFloat(document.landtax.T3.value) || 0;
+            area = parseFloat(document.landtax.T4.value) || 0;
+            bb15_2 = parseFloat(document.landtax.T5.value) || 0;
+            bb15_3 = parseFloat(document.landtax.T6.value) || 0;
             oldtotal = lastvalue * area * (bb15_3 / bb15_2) * (expvalue / 100);
             nowtotal = nowvalue * area * (bb15_3 / bb15_2);
             addtotal = nowtotal - oldtotal;
@@ -258,7 +258,6 @@
 
     </script>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 
     <script type="text/javascript">
         $('document').ready(function () {
@@ -270,8 +269,6 @@
 
     </script>
 
-    <meta property="fb:app_id" content="355040711326416">
-    <meta property="fb:admins" content="100000356677334"/>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;

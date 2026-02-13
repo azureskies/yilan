@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /add_case.html
+Disallow: /case_embedded.html
+Disallow: /cases_embedded.html
+Disallow: /case.html
+Disallow: /venv/
+
+Sitemap: https://lidayshu.com/sitemap.xml
